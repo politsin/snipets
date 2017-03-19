@@ -1,7 +1,7 @@
 atom-beautify:
 autoclose-html:
 autocomplete-php:
-drupal:{'remove all snipets here: C:\Users\polit\.atom\packages\drupal\snippets'}
+drupal: {'remove all snipets here: C:\Users\polit\.atom\packages\drupal\snippets'}
 highlight-selected:
 indent-guide-improved:
 linter-drupalcs:
