@@ -1,0 +1,4 @@
+
+
+drush uli --db-url=sqlite://sites/all/files/.ht.sqlite
+
