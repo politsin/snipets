@@ -1,4 +1,6 @@
 
 
-drush uli --db-url=sqlite://sites/all/files/.ht.sqlite
+$drush uli --db-url=sqlite://sites/all/files/.ht.sqlite
+
+$drush sql-dump --result-file=/var/www/html/adminer.sql
 
