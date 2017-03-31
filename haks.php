@@ -1,5 +1,7 @@
 <?php
 
+  
+  // s3fs change ContentType
   // S3fsStream.php.
   public function stream_flush() {
     ...
