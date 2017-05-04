@@ -1,0 +1,1 @@
+docker stats --format "{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"
