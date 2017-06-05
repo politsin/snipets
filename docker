@@ -1,1 +1,5 @@
 docker stats --format "{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"
+
+
+docker exec -i -t NAME /bin/bash
+
