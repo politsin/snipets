@@ -1,4 +1,4 @@
- $ composer require aws/aws-sdk-php
+$ composer require aws/aws-sdk-php
 
 
 $ composer update && drush up drupal -y
