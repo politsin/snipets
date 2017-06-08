@@ -2,3 +2,5 @@ $ composer require aws/aws-sdk-php
 
 
 $ composer update && drush up drupal -y
+
+composer update --with-dependencies
