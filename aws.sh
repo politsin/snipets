@@ -5,3 +5,4 @@ Default region name [None]: us-east-1
 Default output format [None]: text
 
 aws s3 cp --recursive /opt/ s3://srv-backup/develop/opt/
+aws s3 cp --recursive --quiet /opt/ s3://srv-backup/develop/opt/
