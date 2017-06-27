@@ -1,5 +1,6 @@
 $ composer require aws/aws-sdk-php
 
+composer global require hirak/prestissimo 
 
 $ composer update && drush up drupal -y
 
