@@ -6,3 +6,6 @@ Default output format [None]: text
 
 aws s3 cp --recursive /opt/ s3://srv-backup/develop/opt/
 aws s3 cp --recursive --quiet /opt/ s3://srv-backup/develop/opt/
+
+
+http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
