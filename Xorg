@@ -1,0 +1,10 @@
+x11vnc -display :1 -xkb -rfbport 5901
+x11vnc -display :1 -rfbport 5901
+
+apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
+
+Xvfb :1 -screen 0 1024x768x16
+Xvfb :1 -screen 0 640x480x16
+/usr/sbin/xrdp -nodaemon
+/usr/sbin/xrdp-sesman --nodaemon
+
