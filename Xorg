@@ -27,8 +27,10 @@ RUN cd ~ && \
     wget --quiet --output-document /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" && \
     chmod +x /usr/local/bin/gosu && \
     gosu nobody true
-    
-    
+
+#Xubuntu:::
+RUN apt-get update && \  
+    apt-get install -y xubuntu-desktop
     
 
 apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
