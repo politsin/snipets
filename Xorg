@@ -38,6 +38,19 @@ RUN add-apt-repository ppa:x2go/stable && \
 
 HKEY_CURRENT_USER\Software\Obviously Nice\x2goclient
 
+# Первые действия:
+Верхняя панель - правый клик
+Properties->Panel->AddNewItems->KeyboardLayouts->Add
+Верхняя панель - флажок - правый клик
+KeyboardSettings->Layout
+->!UseSystemDefaults
+->ChangeLayoutOption:Alt+Shift
+->KeyboardLayout->Add->Russian(legacy)
+->ПоднятьВверхRussian
+->Close
+
+
+
 apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
 
 Xvfb :1 -screen 0 1024x768x16
