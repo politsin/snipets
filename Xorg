@@ -51,6 +51,8 @@ KeyboardSettings->Layout
 
 cd /var/www/Desktop/1s-server && dpkg -i *.deb
 cd /var/www/Desktop/1s-client && dpkg -i *.deb
+apt-get -f install
+
 
 apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
 
