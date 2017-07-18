@@ -36,6 +36,8 @@ RUN apt-get update && \
 RUN add-apt-repository ppa:x2go/stable && \  
     apt-get install -y x2goserver x2goserver-xsession
 
+HKEY_CURRENT_USER\Software\Obviously Nice\x2goclient
+
 apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
 
 Xvfb :1 -screen 0 1024x768x16
