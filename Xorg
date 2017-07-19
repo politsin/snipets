@@ -52,7 +52,6 @@ KeyboardSettings->Layout
 cd /var/www/Desktop/1s-server && dpkg -i *.deb
 cd /var/www/Desktop/1s-client && dpkg -i *.deb
 apt-get -f install
-cd /var/www/Desktop/SmallBusiness && ./setup
 
 mkdir -p /var/www/log/1C && \
 cd /var/www/.1cv8/1C/1cv8/conf && \
@@ -60,28 +59,7 @@ wget https://raw.githubusercontent.com/politsin/docker-1c-server/master/config/l
 chown www-data:www-data /var/www/.1cv8/1C/1cv8/conf/logcfg.xml && \
 chown www-data:www-data /var/www/log/1C
 
-apt-get install xorg lightdm xfce4 xrdp firefox x11vnc xfce4-goodies xvfb
-
-Xvfb :1 -screen 0 1024x768x16
-Xvfb :1 -screen 0 640x480x16
-/usr/sbin/xrdp -nodaemon
-/usr/sbin/xrdp-sesman --nodaemon
-
-apt-get install xorg lightdm xfce4 xfce4-goodies xvfb firefox
-
-apt-get install -y xubuntu-desktop software-properties-common
-add-apt-repository ppa:x2go/stable
-apt-get update -y
-apt-get install -y x2goserver x2goserver-xsession
-apt-get install -y  
-apt-get install -y xvfb
-
-adduser --gecos "X2go User" --home /home/x2go --disabled-password x2go
-echo "x2go:x2go" | chpasswd
-
-mkdir /home/x2go/Desktop
-chown x2go:x2go /home/x2go/Desktop
-touch /home/x2go/Desktop/README.txt
-echo -e "To give the user sudo access, run 'su' and use the password 'SuperSecureRootPassword' (You will be told to change this) and then use 'usermod -aG sudo x2go'.\nEnjoy!\n\nThis script was based on the work of https://github.com/bigbrozer - Check out his Github!" | tee /home/x2go/Desktop/README.txt
-chown x2go:x2go /home/x2go/Desktop/README.txt && chmod 777 /home/x2go/Desktop/README.txt
-
+mkdir -p /var/www/.1cv8/db && \
+	touch /etc/apache2/conf-available/db.conf && \
+	/opt/1C/v8.3/x86_64/webinst -apache24 -wsdir db -dir '/var/www/.1cv8/db' -connstr 'Srvr="localhost";Ref="db";' -confPath /etc/apache2/conf-available/db.conf && \
+	a2enconf db
