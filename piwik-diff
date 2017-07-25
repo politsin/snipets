@@ -1,0 +1,37 @@
+diff --git a/plugins/Live/API.php b/plugins/Live/API.php
+index e52410d..72baa70 100644
+--- a/plugins/Live/API.php
++++ b/plugins/Live/API.php
+@@ -331,11 +336,28 @@ class API extends \Piwik\Plugin\API
+             foreach ($table->getRows() as $visitorDetailRow) {
+                 $visitorDetailsArray = Visitor::cleanVisitorDetails($visitorDetailRow->getColumns());
++                $extra = [
++                  'utm_source'   => $visitorDetailsArray['campaign_source'],
++                  'utm_medium'   => $visitorDetailsArray['campaign_medium'],
++                  'utm_campaign' => $visitorDetailsArray['campaign_name'],
++                  'utm_content'  => $visitorDetailsArray['campaign_content'],
++                  'utm_keyword'  => $visitorDetailsArray['campaign_keyword'],
++                  'campaign_id'  => $visitorDetailsArray['campaign_id'],
++                  'referer_keyword'  => $visitorDetailsArray['referer_keyword'],
++                  'referer_name'  => $visitorDetailsArray['referer_name'],
++                  'referer_type'  => $visitorDetailsArray['referer_type'],
++                  'referer_url'   => $visitorDetailsArray['referer_url'],
++                ];
+ 
+                 $visitor = $visitorFactory->create($visitorDetailsArray);
+                 $visitorDetailsArray = $visitor->getAllVisitorDetails();
+ 
++                $visitorDetailsArray['extra'] = $extra;
+                 $visitorDetailsArray['siteCurrency'] = $currency;
+                 $visitorDetailsArray['siteCurrencySymbol'] = @$currencies[$visitorDetailsArray['siteCurrency']];
+                 $visitorDetailsArray['serverTimestamp'] = $visitorDetailsArray['lastActionTimestamp'];
+diff --git a/plugins/Live/VisitorProfile.php b/plugins/Live/VisitorProfile.php
+index b92ead7..146e927 100644
+--- a/plugins/Live/VisitorProfile.php
++++ b/plugins/Live/VisitorProfile.php
+@@ -106,10 +106,10 @@ class VisitorProfile
+             'daysAgo'         => (int)Date::secondsToDays($today->getTimestamp() - Date::factory($serverDate)->getTimestamp()),
+             'referrerType'    => $visit->getColumn('referrerType'),
+             'referralSummary' => self::getReferrerSummaryForVisit($visit),
++            'extra' => $visit['extra'],
+         );
