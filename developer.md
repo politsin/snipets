@@ -17,7 +17,7 @@
  - RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets
  - Settings-Editor-TabType ставим soft
  - Packages-Drupal - добавляем к форматам theme, галочки Scroll Past End и Soft Wrap
- - Packages-SymbolsTreeView ставим в autohide 'class variable', галочка вкл - Auto Toggle ++ добавляем модуль symbols-tree-view-fix
+ - Packages-SymbolsTreeView ставим в autohide 'class', галочка вкл - Auto Toggle
 
 ## Php-для отладки быстро
  - качем архив https://yadi.sk/d/F_cR0Xvg3Lvu4Q и распаковываем в C:/php
