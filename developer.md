@@ -15,7 +15,9 @@
 Команды в консоли:
  - apm install linter linter-ui-default busy-signal intentions atom-beautify autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-drupalcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view
  - RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets
- - 
+ - Settings-Editor-TabType ставим soft
+ - Packages-Drupal - добавляем к форматам theme, галочки Scroll Past End и Soft Wrap
+ - Packages-SymbolsTreeView ставим в autohide 'class variable', галочка вкл - Auto Toggle
 
 ## Php-для отладки быстро
  - качем архив https://yadi.sk/d/F_cR0Xvg3Lvu4Q и распаковываем в C:/php
