@@ -23,4 +23,6 @@
 ## Php-для отладки долго
  - Скачиваем PHP VC14 x64 Non Thread Safe ZIP http://windows.php.net/download#php-7.0 и кладём в папку C:/php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
+ - качаем pear https://pear.php.net/go-pear.phar и кладём его в C:/php/go-pear.phar
+ - выполняем в консоли C:/php/php.exe go-pear.phar
  
