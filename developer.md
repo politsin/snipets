@@ -26,7 +26,7 @@
  - Проверяем что всё ок: cd C:/php/ && php.exe -v
  - качаем pear https://pear.php.net/go-pear.phar и кладём его в C:/php/go-pear.phar
  - выполняем в консоли C:/php/php.exe go-pear.phar (ok - 12 - C:\php\pear.ini - ok)
- - Качаем phpcs версии 2.Х:pear install --alldeps PHP_CodeSniffer-2.9.1
+ - Качаем phpcs версии 2.x: pear install --alldeps PHP_CodeSniffer-2.9.1
  - Проверяем что всё ок: cd C:/php/ && phpcs --version
  - Качем модуль coder https://www.drupal.org/project/coder кладём Drupal и DrupalPractice в папку C:\php\pear\PHP\CodeSniffer\Standards
  - Проверяем что всё ок: cd C:/php/ && phpcs -i
