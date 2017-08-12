@@ -1,4 +1,4 @@
-# Установка окружения для работы
+# Для разработки под Windows
 
 ## Браузеры
  - Хром https://www.google.ru/chrome/browser/desktop/index.html
