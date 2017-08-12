@@ -14,6 +14,13 @@
 ## Настройка Atom
 Команды в консоли:
  - apm install linter linter-ui-default busy-signal intentions atom-beautify autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-drupalcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view
-- RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets 
+ - RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets 
 
-## Php-для отладки
+## Php-для отладки быстро
+ - качем и кладём в C:/php
+ - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
+ - устанавливаем переменные окружения
+## Php-для отладки долго
+ - Скачиваем PHP VC14 x64 Non Thread Safe ZIP http://windows.php.net/download#php-7.0 и кладём в папку C:/php
+ - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
+ 
