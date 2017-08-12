@@ -12,5 +12,7 @@
  - Atom https://atom.io/ (download/windows_x64) 
 
 ## Настройка Atom
+  В консоли:
+  apm install atom-beautify autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-drupalcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view
 
 ## Php-для отладки
