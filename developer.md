@@ -18,7 +18,7 @@
  - 
 
 ## Php-для отладки быстро
- - качем архив и распаковываем в C:/php
+ - качем архив https://yadi.sk/d/F_cR0Xvg3Lvu4Q и распаковываем в C:/php
  - устанавливаем переменные окружения:set Path=%path%;C:\php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
  - Траблшутинг: в настройках linter-php и autocomplete-php путь C:\php\php.exe, linter-drupalcs - C:\php\phpcs
