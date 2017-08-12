@@ -12,7 +12,8 @@
  - Atom https://atom.io/ (download/windows_x64) 
 
 ## Настройка Atom
-  В консоли:
-  apm install linter linter-ui-default busy-signal intentions atom-beautify autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-drupalcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view
+Команды в консоли:
+ - apm install linter linter-ui-default busy-signal intentions atom-beautify autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-drupalcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view
+- RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets 
 
 ## Php-для отладки
