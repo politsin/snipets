@@ -17,11 +17,12 @@
  - RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets 
 
 ## Php-для отладки быстро
- - качем и кладём в C:/php
+ - качем архив и распаковываем в C:/php
+ - устанавливаем переменные окружения:set Path=%path%;C:\php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
- - устанавливаем переменные окружения
 ## Php-для отладки долго
  - Скачиваем PHP VC14 x64 Non Thread Safe ZIP http://windows.php.net/download#php-7.0 и кладём в папку C:/php
+ - устанавливаем переменные окружения:set Path=%path%;C:\php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
  - Проверяем что всё ок: cd C:/php/ && php.exe -v
  - качаем pear https://pear.php.net/go-pear.phar и кладём его в C:/php/go-pear.phar
