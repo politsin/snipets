@@ -21,12 +21,12 @@
 
 ## Php-для отладки быстро
  - качем архив https://yadi.sk/d/F_cR0Xvg3Lvu4Q и распаковываем в C:/php
- - устанавливаем переменные окружения:set Path=%path%;C:\php
+ - устанавливаем переменные окружения: set Path=%path%;C:\php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
  - Траблшутинг: в настройках linter-php и autocomplete-php путь C:\php\php.exe, linter-drupalcs - C:\php\phpcs
 ## Php-для отладки долго
  - Скачиваем PHP VC14 x64 Non Thread Safe ZIP http://windows.php.net/download#php-7.0 и кладём в папку C:/php
- - устанавливаем переменные окружения:set Path=%path%;C:\php
+ - устанавливаем переменные окружения: set Path=%path%;C:\php
  - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145 
  - Проверяем что всё ок: cd C:/php/ && php.exe -v
  - качаем pear https://pear.php.net/go-pear.phar и кладём его в C:/php/go-pear.phar
