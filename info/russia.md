@@ -9,5 +9,6 @@
   других взаимовыгодных условиях)
 * МЧС https://journal.tinkoff.ru/news/g-oborona/
 * Роском:
- - Персональные даныне https://journal.tinkoff.ru/news/personalnye-dannye/
- - ВайФай
+ ** Персональные даныне https://journal.tinkoff.ru/news/personalnye-dannye/
+ ** ВайФай
+ 
