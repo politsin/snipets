@@ -9,6 +9,9 @@
   других взаимовыгодных условиях)
 * МЧС https://journal.tinkoff.ru/news/g-oborona/
 * Роском:
-  - Персональные даныне https://journal.tinkoff.ru/news/personalnye-dannye/
+  - Персональные даныне (на сайте и не на сайте, напр CRM) https://journal.tinkoff.ru/news/personalnye-dannye/
   - ВайФай
- 
+* Природопользование + 3 вида бытовых отходов
+* Налоговая - з/п ~50-%
+* Пожарные - таблички на выходах
+* Лицензионное ПО
