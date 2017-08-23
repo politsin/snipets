@@ -5,3 +5,4 @@ composer global require hirak/prestissimo
 $ composer update && drush up drupal -y
 
 composer update --with-dependencies
+composer update drupal/core --with-dependencies
