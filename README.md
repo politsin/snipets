@@ -9,3 +9,7 @@
 # Git
   * git config --global user.name "Anatoly Politsin"
   * git config --global user.email politsin@gmail.com
+
+# Composer
+  * composer update --with-dependencies
+  * composer update drupal/core --with-dependencies
