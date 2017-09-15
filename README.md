@@ -13,3 +13,6 @@
 # Composer
   * composer update --with-dependencies
   * composer update drupal/core --with-dependencies
+
+# Drush
+  * drush entity-updates
