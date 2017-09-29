@@ -1,5 +1,6 @@
 <?php
 use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
 
 // Nodes.
 $query = \Drupal::entityQuery('node')
@@ -18,6 +19,7 @@ $query = \Drupal::entityQuery('taxonomy_term');
   ->condition('vid', 'project_type');
   ->condition('field_key', $tx_type);
 $tids = $query->execute();
+$types = Term::loadMultiple($tids);
 
 // Old.
 $query = \Drupal::entityQuery('node');
