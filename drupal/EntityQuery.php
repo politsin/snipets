@@ -21,6 +21,23 @@ $query = \Drupal::entityQuery('taxonomy_term');
 $tids = $query->execute();
 $types = Term::loadMultiple($tids);
 
+// Query.
+public static function query(string $type, int $id = 0) {
+  $account = FALSE;
+  $query = \Drupal::entityQuery('billing_account')
+    ->condition('status', 1)
+    ->sort('created', 'ASC')
+    ->condition('entity_type', $type)
+    ->condition('entity_id', $id)
+    ->range(0, 1);
+  $ids = $query->execute();
+  if (!empty($ids)) {
+    $account_id = array_shift($ids);
+    $account = \Drupal::entityManager()->getStorage('billing_account')->load($account_id);
+  }
+  return $account;
+}
+
 // Old.
 $query = \Drupal::entityQuery('node');
 $query->condition('status', 1);
