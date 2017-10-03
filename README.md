@@ -12,6 +12,7 @@
 
 # Composer
   * composer update --with-dependencies
+  * drush updatedb
   * composer update drupal/core --with-dependencies
 
 # Drush
