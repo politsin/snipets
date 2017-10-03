@@ -11,8 +11,10 @@
   * git config --global user.email politsin@gmail.com
 
 # Composer
+  * cd /var/www/html
   * composer update --with-dependencies
   * drush updatedb
+  
   * composer update drupal/core --with-dependencies
 
 # Drush
