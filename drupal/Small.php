@@ -7,11 +7,11 @@ use Drupal\Component\Utility\Unicode;
 use Drupal\Component\Serialization\Json;
 use Symfony\Component\Yaml\Yaml;
 
-$json   = Unicode::substr($result, $start - 2);
-$data   = Json::decode($json);
-if ($debug) {
-  $message = json_encode($params, JSON_UNESCAPED_UNICODE);
-}
+// при декодирования json данных от криворуких разработчиков (напр 1С).
+$json = Unicode::substr($result, $start - 2);
+$json = trim($json); 
+$array   = Json::decode($json);
+$human = json_encode($array, JSON_UNESCAPED_UNICODE);
 $yaml = Yaml::dump($array);
 $array = Yaml::parce($yaml);
 
@@ -47,3 +47,17 @@ use Drupal\Component\Transliteration\PhpTransliteration;
 $langcode = '';
 $trans = new PhpTransliteration();
 $name = $trans->transliterate($name, $langcode);
+
+/**
+ * JSON.
+ */
+$json = trim($json); // при декодирования json данных от криворуких разработчиков (напр 1С)
+$raws  = \Drupal\Component\Serialization\Json::decode($json);
+// Кодировать правильно
+$response = new \Symfony\Component\HttpFoundation\JsonResponse($tree);
+return $response;
+// Кодировать в русские буковы:
+$json = json_encode($tree, JSON_UNESCAPED_UNICODE);
+$response = new \Symfony\Component\HttpFoundation\Response($json);
+$response->headers->set('Content-Type', 'application/json');
+return $response;
