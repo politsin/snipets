@@ -13,7 +13,7 @@ $json = trim($json);
 $array   = Json::decode($json);
 $human = json_encode($array, JSON_UNESCAPED_UNICODE);
 $yaml = Yaml::dump($array);
-$array = Yaml::parce($yaml);
+$array = Yaml::parse($yaml);
 
 /**
  * Markup.
