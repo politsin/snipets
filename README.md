@@ -9,6 +9,9 @@
 # Git
   * git config --global user.name "Anatoly Politsin"
   * git config --global user.email politsin@gmail.com
+[user]
+	email = politsin@gmail.com
+	name = Anatoly Politsin
 
 # Composer
   * cd /var/www/html
