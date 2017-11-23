@@ -2,5 +2,6 @@
 
 $drush uli --db-url=sqlite://sites/all/files/.ht.sqlite
 
-$drush sql-dump --result-file=/var/www/html/adminer.sql
-
+```
+drush sql-dump --result-file=/var/www/html/.db.sql --structure-tables-list=cache,cache_*,cachetags,search_*,watchdog,history,sessions
+```
