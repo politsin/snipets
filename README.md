@@ -14,7 +14,7 @@
 	name = Anatoly Politsin
 
 # Composer
-  * cd /var/www/html
+  * `cd /var/www/html && composer update --with-dependencies`
   * composer update --with-dependencies
   * drush updatedb
   
