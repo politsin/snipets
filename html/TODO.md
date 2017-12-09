@@ -1,6 +1,6 @@
 # TODO
 
- * *img_hover*
+ * *img_hover* https://github.com/codrops/HoverEffectIdeas
  * show
  * subscribe
  * after_submit
