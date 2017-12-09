@@ -1,3 +1,5 @@
+<?php
+
 use Drupal\Component\Serialization\Json;
 
   /**
