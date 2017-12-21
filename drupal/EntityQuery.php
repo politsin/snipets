@@ -21,6 +21,27 @@ $query = \Drupal::entityQuery('taxonomy_term');
 $tids = $query->execute();
 $types = Term::loadMultiple($tids);
 
+/**
+ * Query.
+ */
+public static function query() {
+  $entities = [];
+  $entity_type = 'cml';
+  $storage = \Drupal::entityManager()->getStorage($entity_type);
+  $query = \Drupal::entityQuery($entity_type)
+    ->condition('status', 1)
+    ->sort('created', 'ASC')
+    ->condition('field_status', ['new'], 'IN')
+    ->condition('field_file', 'NULL', '!=');
+  $ids = $query->execute();
+  if (!empty($ids)) {
+    foreach ($storage->loadMultiple($ids) as $id => $entity) {
+      $entities[$id] = $entity;
+    }
+  }
+  return $entities;
+}
+
 // Query.
 public static function query(string $type, int $id = 0) {
   $account = FALSE;
