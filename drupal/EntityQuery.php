@@ -42,6 +42,18 @@ public static function query() {
   return $entities;
 }
 
+ $entity_type = 'commerce_product_variation';
+ $storage = \Drupal::entityManager()->getStorage($entity_type);
+ foreach ($storage->loadMultiple() as $id => $entity) {
+  if (!$entity->product_uuid->value) {
+    $pid = $entity->sku->value;
+    $product_uuid = strstr("{$pid}#", "#", TRUE);
+    $entity->product_uuid->setValue($product_uuid);
+    $entity->save();
+  }
+   //drupal_set_message($id);
+ }
+
 // Query.
 public static function query(string $type, int $id = 0) {
   $account = FALSE;
