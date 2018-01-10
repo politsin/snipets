@@ -14,6 +14,7 @@ add-apt-repository \
 apt-get update
 apt-get install docker-ce
 
+# upgrade
 apt-get upgrade
 
 # docker-compose
@@ -22,3 +23,6 @@ curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compos
 chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 docker-compose migrate-to-labels
+
+# reboot
+reboot
