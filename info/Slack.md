@@ -1,4 +1,4 @@
 # Альтернативы на своём хостинге
-* rocket chat https://rocket.chat/
 * mattermost https://about.mattermost.com/download/ 
+* rocket chat https://rocket.chat/
 * matrix https://matrix.org/
