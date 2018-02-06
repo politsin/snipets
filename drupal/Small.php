@@ -61,3 +61,9 @@ $json = json_encode($tree, JSON_UNESCAPED_UNICODE);
 $response = new \Symfony\Component\HttpFoundation\Response($json);
 $response->headers->set('Content-Type', 'application/json');
 return $response;
+
+
+/**
+ * Field Formatter
+ */
+drush ev "print_r(array_keys(\Drupal::service('plugin.manager.field.formatter')->getDefinitions()));"
