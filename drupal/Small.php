@@ -67,3 +67,17 @@ return $response;
  * Field Formatter
  */
 drush ev "print_r(array_keys(\Drupal::service('plugin.manager.field.formatter')->getDefinitions()));"
+  
+/**
+ * Mp3.
+ */
+use Symfony\Component\HttpFoundation\Response;
+$file = file_get_contents($mp3);
+$response = new Response($file);
+$response->headers->set('Content-Type', "audio/mpeg");
+$response->headers->set('Content-Disposition', "inline; filename=rec-$uuid.mp3");
+$response->headers->set('Content-length', strlen($file));
+$response->headers->set('X-Accel-Buffering', "no");
+$response->headers->set('Cache-Control', 'no-cache');
+$response->headers->set('Accept-Ranges', 'bytes');
+return $response;
