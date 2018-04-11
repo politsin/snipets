@@ -6,7 +6,7 @@ index 8d16497..e78924c 100644
  
              foreach ($table->getRows() as $visitorDetailRow) {
                  $visitorDetailsArray = Visitor::cleanVisitorDetails($visitorDetailRow->getColumns());
-
+-
 +                $extra = [
 +                  'utm_source'   => $visitorDetailsArray['campaign_source'],
 +                  'utm_medium'   => $visitorDetailsArray['campaign_medium'],
@@ -23,17 +23,16 @@ index 8d16497..e78924c 100644
                  $visitorDetailsArray = $visitor->getAllVisitorDetails();
 +                $visitorDetailsArray['extra'] = $extra;
  
-                 $visitorDetailsArray['siteCurrency'] = $currency;
-                 $visitorDetailsArray['siteCurrencySymbol'] = @$currencies[$visitorDetailsArray['siteCurrency']];
-diff --git a/plugins/Live/VisitorProfile.php b/plugins/Live/VisitorProfile.php
+                 $visitorDetailsArray['actionDetails'] = array();
+                 if (!$doNotFetchActions) {
+diff --git a/plugins/Live/VisitorDetails.php b/plugins/Live/VisitorDetails.php
 index dcf7341..daf34b6 100644
---- a/plugins/Live/VisitorProfile.php
-+++ b/plugins/Live/VisitorProfile.php
-@@ -115,6 +115,7 @@ class VisitorProfile
-             'daysAgo'         => (int)Date::secondsToDays($today->getTimestamp() - Date::factory($serverDate)->getTimestamp()),
+--- a/plugins/Live/VisitorDetails.php
++++ b/plugins/Live/VisitorDetails.php
+@@ -205,6 +205,7 @@
              'referrerType'    => $visit->getColumn('referrerType'),
+             'referrerUrl'     => $visit->getColumn('referrerUrl') ?: '',
              'referralSummary' => self::getReferrerSummaryForVisit($visit),
 +            'extra' => $visit['extra'],
          );
      }
-
