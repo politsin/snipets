@@ -17,6 +17,11 @@
 	name = Anatoly Politsin
 ```
 
+# Поискать файлы
+```sh
+sudo grep -Hr pure-ftpd /etc/
+```
+
 # snipets
 * https://www.drupal.org/node/2118743
 * wget https://www.drupal.org/files/issues/core-8.3.0-twig_debug_not_display-suggestions-array-2118743-107.patch
