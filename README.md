@@ -11,6 +11,7 @@
 # Git
   * git config --global user.name "Anatoly Politsin"
   * git config --global user.email politsin@gmail.com
+  * git config --global push.default simple
 ```
 [user]
 	email = politsin@gmail.com
