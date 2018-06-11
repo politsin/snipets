@@ -8,3 +8,4 @@ docker volume prune
 
 
 docker exec -it NAME /bin/bash
+export TERM=xterm
