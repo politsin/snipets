@@ -20,7 +20,7 @@
 
 # Поискать файлы
 ```sh
-sudo grep -Hr pure-ftpd /etc/
+grep -Hr pure-ftpd /etc/
 ```
 
 # snipets
