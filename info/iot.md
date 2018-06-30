@@ -8,6 +8,10 @@
 ## Компании автоматизации
 * http://dep.ru
 
+## blink
+* user https://habr.com/users/doom369/
+* examples https://examples.blynk.cc/?board=ESP8266&shield=ESP8266%20WiFi&example=GettingStarted%2FBlynkBlink
+
 ## ESP8266
 * https://www.blynk.cc/
 * https://habr.com/post/122601/
@@ -16,6 +20,7 @@
 * https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
 * WeMos D1 https://mcustore.ru/store/espressif-systems/wemos-d1-mini-sovmestimyj-kontroller-na-esp8266/
 * WeMos D1 https://arduinomaster.ru/datchiki-arduino/esp8266-wemos-d1-mini-raspinovka/
+
 ### nodemcu
 * nodemcu http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
 * https://nodemcu.readthedocs.io/en/master/en/#getting-started
