@@ -15,6 +15,7 @@
 * https://esp8266.ru/esplorer/
 * https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
 * https://www.cloudmqtt.com/
+* WeMos D1 https://arduinomaster.ru/datchiki-arduino/esp8266-wemos-d1-mini-raspinovka/
 
 ## Front
 * https://www.amcharts.com/products/ графики
