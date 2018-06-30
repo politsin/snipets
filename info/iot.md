@@ -4,7 +4,7 @@
 * Modbus https://www.linux.org.ru/forum/development/12283908
 * CAN https://ru.wikipedia.org/wiki/Controller_Area_Network
 * CANNY https://habr.com/post/369429/
-* 
+
 ## Компании автоматизации
 * http://dep.ru
 
@@ -14,7 +14,7 @@
 * https://habr.com/post/411259/
 * https://esp8266.ru/esplorer/
 * https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
-
+* WeMos D1 https://mcustore.ru/store/espressif-systems/wemos-d1-mini-sovmestimyj-kontroller-na-esp8266/
 * WeMos D1 https://arduinomaster.ru/datchiki-arduino/esp8266-wemos-d1-mini-raspinovka/
 
 ## MQTT
