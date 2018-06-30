@@ -33,4 +33,7 @@
   - https://api.thingspeak.com/channels/YOUR_CHANNEL_ID/feeds.json
 ##  Digispark USB 
 * https://mysku.ru/blog/china-stores/36691.html
-* http://digistump.com/products/1 7.95$ vs 251р. https://mcustore.ru/store/avr/modul-digispark-usb-na-baze-attiny85/
+* цена 
+ - 7.95$ http://digistump.com/products/1  
+ - 251р. https://mcustore.ru/store/avr/modul-digispark-usb-na-baze-attiny85/
+ - 85,65 руб. алиэкспресс
