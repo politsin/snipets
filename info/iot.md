@@ -33,3 +33,4 @@
   - https://api.thingspeak.com/channels/YOUR_CHANNEL_ID/feeds.json
 ##  Digispark USB 
 * https://mysku.ru/blog/china-stores/36691.html
+* http://digistump.com/products/1 7.95 vs 251р.
