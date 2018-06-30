@@ -7,3 +7,7 @@
 * 
 ## Компании автоматизации
 * http://dep.ru
+
+## blink
+* https://www.blynk.cc/
+* https://habr.com/post/122601/
