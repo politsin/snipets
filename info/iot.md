@@ -20,6 +20,7 @@
 * nodemcu http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
 * https://nodemcu.readthedocs.io/en/master/en/#getting-started
 * http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
+* https://github.com/nodemcu/nodemcu-flasher/blob/master/Win64/Release/ESP8266Flasher.exe
 
 ## MQTT
 * https://www.youtube.com/watch?v=PWeCdzc8tRw
