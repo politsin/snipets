@@ -19,6 +19,7 @@
 
 ## MQTT
 * https://www.youtube.com/watch?v=PWeCdzc8tRw
+* http://mqttfx.jensd.de/index.php/download
 * https://thingspeak.com/
 * https://www.cloudmqtt.com/
 
