@@ -16,6 +16,7 @@
 * https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html
 * WeMos D1 https://mcustore.ru/store/espressif-systems/wemos-d1-mini-sovmestimyj-kontroller-na-esp8266/
 * WeMos D1 https://arduinomaster.ru/datchiki-arduino/esp8266-wemos-d1-mini-raspinovka/
+* nodemcu http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
 
 ## MQTT
 * https://www.youtube.com/watch?v=PWeCdzc8tRw
