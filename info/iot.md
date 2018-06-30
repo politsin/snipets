@@ -26,8 +26,10 @@
 ## Front
 * https://www.amcharts.com/products/ графики
 
-#docs
+## docs
  * Обновить свой канал по URL:
   - https://api.thingspeak.com/update?api_key=YOUR_CHANNEL_API_KEY&field1=7
  * Проверить свой канал:
   - https://api.thingspeak.com/channels/YOUR_CHANNEL_ID/feeds.json
+##  Digispark USB 
+* https://mysku.ru/blog/china-stores/36691.html
