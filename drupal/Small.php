@@ -22,6 +22,12 @@ use Drupal\Core\Render\Markup;
 drupal_set_message(Markup::create($message), 'warning');
 
 /**
+ * Logs.
+ */
+\Drupal::logger('my_module')->notice($message);
+\Drupal::logger('my_module')->error($message);
+
+/**
  * SOAP.
  */
 $options = [
