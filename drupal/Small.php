@@ -68,6 +68,23 @@ $response = new \Symfony\Component\HttpFoundation\Response($json);
 $response->headers->set('Content-Type', 'application/json');
 return $response;
 
+// Link
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+$text = "My Link"
+$href = \Drupal::config('dummy.settings')->get('href');
+if (substr($link, 0, 1) == '/') {
+  $url = Url::fromUserInput($href);
+}
+else {
+  $url = Url::fromUri($href);
+}
+$link = Link::fromTextAndUrl($text, $url)->toString();
+$entity = 'node';
+$link Link::createFromRoute($entity->label(),
+  "entity.{$entity}.canonical",
+  [$entity => $entity->id()]
+)->toString();
 
 /**
  * Field Formatter
