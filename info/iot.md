@@ -50,3 +50,17 @@
  - 7.95$ http://digistump.com/products/1  
  - 251р. https://mcustore.ru/store/avr/modul-digispark-usb-na-baze-attiny85/
  - 85,65 руб. алиэкспресс
+
+## vscode
+* https://code.visualstudio.com/download
+* http://releases.llvm.org/download.html 
+* https://platformio.org/get-started/ide?install=vscode
+* https://git-scm.com/download/win
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+* https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru
+* https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons
+
+### Доп
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go
+* https://marketplace.visualstudio.com/items?itemName=ms-python.python
