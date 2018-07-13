@@ -34,7 +34,7 @@ grep -Hr pure-ftpd /etc/
 <a href="/contact/myform"
    class="use-ajax"
    data-dialog-type="modal"
-   data-dialog-options="{\"width\": 700}">
+   data-dialog-options='{"width": 300}'>
   Hello world!
 </a>
 ```
