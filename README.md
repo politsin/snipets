@@ -21,6 +21,7 @@
 # Поискать файлы
 ```sh
 grep -Hr pure-ftpd /etc/
+grep ': ru' -P -R -I -l | xargs sed -i 's/: ru/: en/g'
 grep 'project' -P -R -I -l | xargs sed -i 's/project/work/g'
 grep 'Project' -P -R -I -l | xargs sed -i 's/Project/Work/g'
 
