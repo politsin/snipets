@@ -2,8 +2,7 @@
   * `cd /var/www/html && composer update --with-dependencies`
   * composer update --with-dependencies
   * drush updatedb
-  
-  * composer update drupal/core --with-dependencies
+  * `composer global require hirak/prestissimo`
 
 # Drush
   * drush entity-updates
