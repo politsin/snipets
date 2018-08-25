@@ -8,7 +8,9 @@ namespace Drupal\app\Controller;
  */
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\node\Entity\Node;
 use Drupal\Component\Serialization\Json;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Yaml\Yaml;
 
 /**
