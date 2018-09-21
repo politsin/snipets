@@ -12,7 +12,7 @@ class HomeController extends ControllerBase {
   /**
    * Now.
    */
-  public function now($info = '') {
+  public static function now($info = '') {
     usleep(500000);
     $time = format_date(time(), 'custom', 'i:s');
     $t = microtime(TRUE);
