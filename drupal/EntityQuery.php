@@ -5,9 +5,8 @@ use Drupal\taxonomy\Entity\Term;
 /**
  * Query.
  */
-public static function query() {
+public static function query($entity_type = 'cml') {
   $entities = [];
-  $entity_type = 'cml';
   $storage = \Drupal::entityManager()->getStorage($entity_type);
   $query = \Drupal::entityQuery($entity_type)
     ->condition('status', 1)
