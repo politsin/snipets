@@ -13,7 +13,9 @@ public static function query() {
     ->condition('status', 1)
     ->sort('created', 'ASC')
     ->condition('field_status', ['new'], 'IN')
-    ->condition('field_file', 'NULL', '!=');
+    ->condition('field_file', 'NULL', '!=')
+    ->sort('created', 'ASC')
+    ->range(0, 100);
   $ids = $query->execute();
   if (!empty($ids)) {
     foreach ($storage->loadMultiple($ids) as $id => $entity) {
