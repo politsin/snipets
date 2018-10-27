@@ -6,6 +6,8 @@
 $config = \Drupal::config('city.settings');
 $phone = $config->get('phone');
 
+\Drupal::transliteration()->transliterate($foo);
+
 
 $subdomain = \Drupal::service('idna.service')->decode($subdomain);
 $frontpage = \Drupal::service('path.matcher')->isFrontPage();
