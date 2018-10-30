@@ -8,6 +8,7 @@ $phone = $config->get('phone');
 
 \Drupal::transliteration()->transliterate($foo);
 
+\Drupal::service('uuid')->generate();
 
 $subdomain = \Drupal::service('idna.service')->decode($subdomain);
 $frontpage = \Drupal::service('path.matcher')->isFrontPage();
