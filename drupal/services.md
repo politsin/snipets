@@ -21,6 +21,9 @@ $request = \Drupal::request();
 $storage = \Drupal::entityManager()->getStorage('city');
 $terms_storage = \Drupal::service('entity_type.manager')->getStorage("taxonomy_term");
 
+use \Drupal\user\Entity\User;
+$uid = \Drupal::currentUser()->id();
+$user = User::load($uid);
 
 \Drupal::service('module_handler')->alter('letsencrypt_challenge', $challenge, $drupalroot);
 $dir = \Drupal::service('file_system')->realpath('private://');
