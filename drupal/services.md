@@ -27,4 +27,8 @@ $user = User::load($uid);
 
 \Drupal::service('module_handler')->alter('letsencrypt_challenge', $challenge, $drupalroot);
 $dir = \Drupal::service('file_system')->realpath('private://');
+
+// Cache.
+$renderCache = \Drupal::service('cache.render');
+$renderCache->invalidateAll();
 ```
