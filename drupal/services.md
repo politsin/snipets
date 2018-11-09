@@ -6,6 +6,8 @@
 $config = \Drupal::config('city.settings');
 $phone = $config->get('phone');
 
+\Drupal::service('date.formatter')->format($timestamp, $type, $format, $timezone, $langcode);
+
 \Drupal::transliteration()->transliterate($foo);
 
 \Drupal::service('uuid')->generate();
