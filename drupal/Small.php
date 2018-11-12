@@ -86,6 +86,9 @@ $link Link::createFromRoute($entity->label(),
   [$entity => $entity->id()]
 )->toString();
 
+$url = Url::fromUserInput($link);
+$build["link"] = Link::fromTextAndUrl($text, $url)->toRenderable();
+
 /**
  * Field Formatter
  */
