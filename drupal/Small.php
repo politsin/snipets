@@ -80,10 +80,10 @@ else {
   $url = Url::fromUri($href);
 }
 $link = Link::fromTextAndUrl($text, $url)->toString();
-$entity = 'node';
+$etype = 'node';
 $link Link::createFromRoute($entity->label(),
-  "entity.{$entity}.canonical",
-  [$entity => $entity->id()]
+  "entity.{$etype}.canonical",
+  [$etype => $entity->id()]
 )->toString();
 
 $url = Url::fromUserInput($link);
