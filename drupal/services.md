@@ -18,7 +18,11 @@ $node = \Drupal::request()->attributes->get('node');
 $path = \Drupal::service('path.current')->getPath(); //String
 $host = \Drupal::request()->getHost();
 $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+// Request.
 $request = \Drupal::request();
+$request->getUri(); // "https://example.com/app/debug"
+$request->getRequestUri(); // "/app/debug"
 
 $storage = \Drupal::entityManager()->getStorage('city');
 $terms_storage = \Drupal::service('entity_type.manager')->getStorage("taxonomy_term");
