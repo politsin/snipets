@@ -13,6 +13,7 @@ public static function query($entity_type = 'cml') {
     ->sort('created', 'ASC')
     ->condition('field_status', ['new'], 'IN')
     ->condition('field_file', 'NULL', '!=')
+    ->condition('field_project.entity.field_project_tx_type', $value)
     ->sort('created', 'ASC')
     ->range(0, 100);
   $ids = $query->execute();
