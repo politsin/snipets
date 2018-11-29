@@ -12,7 +12,7 @@ $phone = $config->get('phone');
 
 \Drupal::service('uuid')->generate();
 
-$subdomain = \Drupal::service('idna.service')->decode($subdomain);
+$subdomain = \Drupal::service('idna')->decode($subdomain);
 $frontpage = \Drupal::service('path.matcher')->isFrontPage();
 $node = \Drupal::request()->attributes->get('node');
 $path = \Drupal::service('path.current')->getPath(); //String
