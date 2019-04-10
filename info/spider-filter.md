@@ -13,6 +13,7 @@ Names:
 money: микрозаймы/форекс/биткоины
 forex: форекс
 hosting: хостинг
+azino: казино
 ```
 
 City:
