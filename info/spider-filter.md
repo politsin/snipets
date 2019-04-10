@@ -14,5 +14,14 @@ hosting: хостинг
 
 City:
 ```yaml
-vologda
+vologda: Вологда
+```
+
+Отрасли:
+```yaml
+shop: магазины
+hotel: хорека
+hostel: хорека
+cafe: хорека
+caffe: хорека
 ```
