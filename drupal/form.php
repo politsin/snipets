@@ -16,18 +16,16 @@ class Form extends FormBase {
    * AJAX ajaxPrev.
    */
   public function ajaxSubmit(array &$form, $form_state) {
-    $otvet = "change submit:\n";
+    $otvet = "ajax submit:\n";
     $inputs = $form_state->getValue('foo');
     $data = [],
     foreach (explode("\n", $input) as $input) {
-      $input = trim($input);
-      if ($domain) {
+      if ($input = trim($input)) {
         $res = \Drupal::service('bar')->get($input);
         $data[] = $res;
       }
     }
-    $result = explode("\n", $vals);
-    return AjaxResult::ajax($this->wrapper, $otvet, $result);
+    return AjaxResult::ajax($this->wrapper, $otvet, $data);
   }
 
   /**
