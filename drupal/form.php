@@ -82,10 +82,11 @@ class Form extends FormBase {
   public function ajaxSubmit(array &$form, $form_state) {
     $otvet = "ajax submit:\n";
     $inputs = $form_state->getValue('foo');
+    $inputs = str_replace(",", "\n", $inputs);
     $data = [];
-    foreach (explode("\n", $input) as $input) {
+    foreach (explode("\n", $inputs) as $input) {
       if ($input = trim($input)) {
-        $res = \Drupal::service('bar')->get($input);
+        $res = \Drupal::service('idna')->decode($input);
         $data[] = $res;
       }
     }
