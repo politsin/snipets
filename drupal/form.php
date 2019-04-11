@@ -1,3 +1,9 @@
+<?php
+$f = 'Drupal\app\Form';
+$extra = [];
+$build['features'] = \Drupal::formBuilder()->getForm("{$f}\Form", $extra);
+?>
+
 ```yaml
 app.settings:
   path: '/admin/config/system/app'
