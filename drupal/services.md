@@ -37,4 +37,11 @@ $dir = \Drupal::service('file_system')->realpath('private://');
 // Cache.
 $renderCache = \Drupal::service('cache.render');
 $renderCache->invalidateAll();
+
+// Common.
+\Drupal::messenger()->addMessage('Hello world', $type);
+// Specific.
+\Drupal::messenger()->addError('Hello world');
+\Drupal::messenger()->addStatus('Hello world');
+\Drupal::messenger()->addWarning('Hello world');
 ```
