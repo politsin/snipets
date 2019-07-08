@@ -38,10 +38,15 @@ $dir = \Drupal::service('file_system')->realpath('private://');
 $renderCache = \Drupal::service('cache.render');
 $renderCache->invalidateAll();
 
-// Common.
+// drupal_message
 \Drupal::messenger()->addMessage('Hello world', $type);
 // Specific.
 \Drupal::messenger()->addError('Hello world');
 \Drupal::messenger()->addStatus('Hello world');
 \Drupal::messenger()->addWarning('Hello world');
+
+// Watchdog
+\Drupal::logger('my_module')->notice($message);
+\Drupal::logger('my_module')->error($message);
+
 ```
