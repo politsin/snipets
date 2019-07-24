@@ -10,7 +10,6 @@ public static function query($entity_type = 'cml') {
   $storage = \Drupal::entityManager()->getStorage($entity_type);
   $query = \Drupal::entityQuery($entity_type)
     ->condition('status', 1)
-    ->sort('created', 'ASC')
     ->condition('field_status', ['new'], 'IN')
     ->condition('field_file', 'NULL', '!=')
     ->condition('field_project.entity.field_project_tx_type', $value)
