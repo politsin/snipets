@@ -1,5 +1,5 @@
 # Composer
-  * `cd /var/www/html && composer update --with-dependencies && drush updatedb --yes --entity-updates`
+  * `cd /var/www/html && composer update --with-dependencies && drush updatedb --yes`
   * composer update --with-dependencies
   * drush updatedb
   * `composer global require hirak/prestissimo`
