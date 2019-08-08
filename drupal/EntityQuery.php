@@ -7,7 +7,8 @@ use Drupal\taxonomy\Entity\Term;
  */
 public static function query($entity_type = 'cml') {
   $entities = [];
-  $storage = \Drupal::entityManager()->getStorage($entity_type);
+  $storage = \Drupal::service('entity_type.manager')->getStorage($entity_type);
+  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
   $query = \Drupal::entityQuery($entity_type)
     ->condition('status', 1)
     ->condition('field_status', ['new'], 'IN')
