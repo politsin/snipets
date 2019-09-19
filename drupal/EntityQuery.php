@@ -40,6 +40,13 @@ use Drupal\Core\Entity\EntityRepositoryInterface;
 $query = $this->cmlStorage->getQuery()
       ->condition('status', 1)
       ->sort('created', $sort);
+$ids = $query->execute();
+if (!empty($ids)) {
+  foreach ($this->cmlStorage->loadMultiple($ids) as $id => $entity) {
+    $entities[$id] = $entity;
+  }
+}
+
 $cml = $this->cmlStorage->create([
       'name' => "name",
 ])->save();
