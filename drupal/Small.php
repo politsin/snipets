@@ -10,7 +10,7 @@ use Symfony\Component\Yaml\Yaml;
 // при декодирования json данных от криворуких разработчиков (напр 1С).
 $json = Unicode::substr($result, $start - 2);
 $json = trim($json); 
-$array   = Json::decode($json);
+$array = Json::decode($json);
 $human = json_encode($array, JSON_UNESCAPED_UNICODE);
 $yaml = Yaml::dump($array);
 $array = Yaml::parse($yaml);
