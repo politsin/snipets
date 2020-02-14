@@ -55,6 +55,33 @@ $cml = $this->entityRepository->loadEntityByUuid('cml', $cookie);
 
 
 /**
+ * Construct.
+ */
+public function __construct() {
+  $entity_type = 'node';
+  $this->storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+}
+
+/**
+ * Query.
+ */
+public function query() {
+  $entities = [];
+  $query = $this->storage->getQuery()
+    ->condition('status', 1)
+    ->sort('created', 'ASC')
+    ->range(0, 100);
+  $ids = $query->execute();
+  if (!empty($ids)) {
+    foreach ($this->storage->loadMultiple($ids) as $id => $entity) {
+      $entities[$id] = $entity;
+    }
+  }
+  return $entities;
+}
+
+
+/**
  * Query.
  */
 public static function query($entity_type = 'cml') {
