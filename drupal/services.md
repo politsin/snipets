@@ -45,11 +45,11 @@ $renderCache = \Drupal::service('cache.render');
 $renderCache->invalidateAll();
 
 // drupal_message
-\Drupal::messenger()->addMessage('Hello world', $type);
+\Drupal::messenger()->addMessage("Hello world", $type);
 // Specific.
-\Drupal::messenger()->addError('Hello world');
-\Drupal::messenger()->addStatus('Hello world');
-\Drupal::messenger()->addWarning('Hello world');
+\Drupal::messenger()->addError("Hello world");
+\Drupal::messenger()->addStatus("Hello world");
+\Drupal::messenger()->addWarning("Hello world");
 
 // Watchdog
 \Drupal::logger('my_module')->notice($message);
