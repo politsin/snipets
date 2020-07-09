@@ -3,7 +3,11 @@
 ```php
 <?php
 
-
+use Symfony\Component\HttpFoundation\Request;
+public function page(Request $request) {
+  $key = $request->query->get('key');
+  $key = \Drupal::request()->query->get('key');
+}
 
 $config = \Drupal::config('city.settings');
 $phone = $config->get('phone');
