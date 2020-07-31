@@ -18,6 +18,20 @@
 	name = Anatoly Politsin
 ```
 
+# Cab Snip
+  * Modules
+    - r4032login
+    - email_registration
+    - ultimate_cron
+    - node_view_permissions
+    - blank_node_title
+    - mailsystem
+    - s3fs
+  * Drush
+    - `drush generate module`
+    - `drush generate content-entity`
+    - `drush generate controller`, `drush generate permissions`, `drush generate form-config`
+
 # Поискать файлы
 ```sh
 grep -Hr pure-ftpd /etc/
