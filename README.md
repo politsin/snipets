@@ -8,6 +8,18 @@
 # Drush
   * drush entity-updates
 
+## services
+```php
+<?php
+\Drupal::messenger()->addError("Hello world");
+\Drupal::messenger()->addStatus("Hello world");
+\Drupal::messenger()->addWarning("Hello world");
+
+// Watchdog
+\Drupal::logger('my_module')->notice($message);
+\Drupal::logger('my_module')->error($message);
+```
+
 # Git
   * git config --global user.name "Anatoly Politsin"
   * git config --global user.email politsin@gmail.com
