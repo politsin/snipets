@@ -24,6 +24,7 @@
   * git config --global user.name "Anatoly Politsin"
   * git config --global user.email politsin@gmail.com
   * git config --global push.default simple
+  * `git commit --amend --author="Anatoly Politsin <politsin@gmail.com>" && git push origin master --force`
 ```
 [user]
 	email = politsin@gmail.com
