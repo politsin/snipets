@@ -1,0 +1,15 @@
+diff --git a/modules/contrib/devel/src/Plugin/Devel/Dumper/Kint.php b/modules/contrib/devel/src/Plugin/Devel/Dumper/Kint.php
+index 464a28592e..eaf669c8d9 100644
+--- a/modules/contrib/devel/src/Plugin/Devel/Dumper/Kint.php
++++ b/modules/contrib/devel/src/Plugin/Devel/Dumper/Kint.php
+@@ -32,8 +32,8 @@ class Kint extends DevelDumperBase {
+   protected function configure() {
+     // Remove resource-hungry plugins.
+     \Kint::$plugins = array_diff(\Kint::$plugins, [
+-      'Kint\\Parser\\ClassMethodsPlugin',
+-      'Kint\\Parser\\ClassStaticsPlugin',
++      // 'Kint\\Parser\\ClassMethodsPlugin',
++      // 'Kint\\Parser\\ClassStaticsPlugin',
+       'Kint\\Parser\\IteratorPlugin',
+     ]);
+     \Kint::$aliases = $this->getInternalFunctions();
