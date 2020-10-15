@@ -1,0 +1,11 @@
+diff --git a/src/ClientBankExchange/Model/DocumentSection.php b/src/ClientBankExchange/Model/DocumentSection.php
+index f5e1e0f..e435a7e 100644
+--- a/src/ClientBankExchange/Model/DocumentSection.php
++++ b/src/ClientBankExchange/Model/DocumentSection.php
+@@ -74,6 +74,7 @@ class DocumentSection extends Component
+             'ДополнУсловия',
+             'НомерСчетаПоставщика',
+             'ДатаОтсылкиДок',
++            'КодНазПлатежа',
+         ];
+     }
