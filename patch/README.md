@@ -9,7 +9,7 @@
                 "КодНазПлатежа": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kl21c.patch"
             },
             "drupal/devel": {
-                "ClassMethods": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
+                "ClassMethods — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
             }
         }
    }
