@@ -16,8 +16,8 @@
 \Drupal::messenger()->addWarning("Hello world");
 
 // Watchdog
-\Drupal::logger('my_module')->notice($message);
-\Drupal::logger('my_module')->error($message);
+\Drupal::logger(__CLASS__)->notice($message);
+\Drupal::logger(__CLASS__)->error($message);
 ```
 
 # Git
