@@ -1,0 +1,3 @@
+# Drush-generate
+
+* `drupal`
