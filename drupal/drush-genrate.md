@@ -4,21 +4,21 @@
 * `drush generate hook` - Generates a hook
 * `javascript` -Generates Drupal 8 JavaScript file
 * `template` - Generates a template
+* -- drush
+* `drush-command-file` / `dcf` - Generates a Drush command file.
 * --
-* `dcf` / `drush-command-file ()` - Generates a Drush command file.
+* `form-config` / `config-form` - Generates a configuration form
+* `form-confirm` / `confirm-form` - Generates a confirmation form
+* `form-simple`  Generates simple form
 * --
-* form-config (config-form)                                      Generates a configuration form
-* ?? form-confirm (confirm-form)                                    Generates a confirmation form
-* form-simple                                                    Generates simple form
+* `module-content-entity` / `content-entity` - Generates content entity module
+* `module-standard` / `module` - Generates standard Drupal 8 module
 * --
-* module-content-entity (content-entity)                         Generates content entity module
-* module-standard (module)                                       Generates standard Drupal 8 module
-* --
-*  plugin-block (block)                                           Generates block plugin
+* plugin-block (block)                                           Generates block plugin
 * plugin-entity-reference-selection (entity-reference-selection) Generates entity reference selection plugin
-*  plugin-field-formatter (field-formatter)                       Generates field formatter plugin
-*   plugin-field-type (field-type)                                 Generates field type plugin
-*   plugin-field-widget (field-widget)                             Generates field widget plugin
+* plugin-field-formatter (field-formatter)                       Generates field formatter plugin
+* plugin-field-type (field-type)                                 Generates field type plugin
+* plugin-field-widget (field-widget)                             Generates field widget plugin
 * plugin-queue-worker (queue-worker)                             Generates queue worker plugin
 * plugin-rest-resource (rest-resource)                           Generates rest resource plugin
 * service-custom (custom-service)                                Generates a custom Drupal service
