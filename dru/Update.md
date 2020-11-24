@@ -19,7 +19,7 @@ wget https://raw.githubusercontent.com/politsin/snipets/master/patch/drupal-kint
 patch -p1 < kint.patch
 ```
 
-## Catalog
+## CmlStarter / сломан контекстный фильтр
 
 1. включаем модуль конфиг-ентити
 1. переходим в импорт единичной вьюхи
