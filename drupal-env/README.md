@@ -1,3 +1,0 @@
-# Drupal development environment
-
-* Hello
