@@ -12,6 +12,9 @@
   - CSS / SCSS / Less
   - HTML / YAML / Markdown / GraphQL
 
+## Deco
+* Atom Theme (One Dark Pro) https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme
+
 ## Local
 * Atom Keymap `vscode:extension/ms-vscode.atom-keybindings`
   - https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
