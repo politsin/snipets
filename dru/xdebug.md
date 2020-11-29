@@ -6,6 +6,7 @@
 * `FFox` - https://addons.mozilla.org/ru/firefox/addon/xdebug-helper-for-firefox/
   - PHPSTORM [Save]
   - Кнопочка включения в строке поиска
+  - Приложение добавляет куку: `XDEBUG_SESSION:"PHPSTORM"`
 
 `/etc/php/7.4/mods-available/xdebug.ini`
 ```ini
