@@ -1,6 +1,7 @@
 # Visual Studio Code for Drupal
 ## Форматирование
 * Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
+* Форматировать выделенный фрагмент `Ctrl`+`F`
 * Prettier: `CMD`/`Shift`/`P` -> Format Document [Shift+ALT+F]
   - JavaScript / TypeScript / JSX / JSON / Vue /Angular
   - CSS / SCSS / Less
