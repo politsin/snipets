@@ -1,5 +1,7 @@
 # Visual Studio Code for Drupal
 
+* `CMD`/`Shift`/`P` -> Format Document
+
 ## Local
 * Atom Keymap `vscode:extension/ms-vscode.atom-keybindings`
   - https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
