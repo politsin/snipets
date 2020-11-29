@@ -24,7 +24,7 @@
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) [7.1M]
 * [?] [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) [124k]
-* https://marketplace.visualstudio.com/items?itemName=liamhammett.inline-parameters
+
 
 ## Local
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
@@ -39,11 +39,11 @@
 * PHP [cbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf) [900k] `persoderlind.vscode-phpcbf`
 * PHP [DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
 * PHP [Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
-* PHP [Parameter Hint](https://marketplace.visualstudio.com/items?itemName=robertgr991.php-parameter-hint) [2k]
 * Drupal [Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
 * Twig [Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
+* [PHP/JS](https://marketplace.visualstudio.com/items?itemName=liamhammett.inline-parameters) [5k]
 * [ ] PHP [Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
 
 ## JS / Frontend
