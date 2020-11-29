@@ -7,6 +7,7 @@
   - PHPSTORM [Save]
   - Кнопочка включения рядом с браузером
 
+`php.ini`
 ```ini
 [xdebug]
 zend_extension=/usr/lib/php/20200930/xdebug.so
@@ -18,4 +19,25 @@ xdebug.profiler_enable=1
 xdebug.extended_info = 1
 xdebug.profiler_output_dir=/tmp
 xdebug.idekey = "PHPSTORM"
+```
+
+`.vscode/launch.json`
+```js
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "pathMappings": {
+        "/var/www/html": "${workspaceFolder}"
+      },
+      "xdebugSettings": {
+        "show_hidden": 1
+      }
+    }
+  ]
+}
 ```
