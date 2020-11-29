@@ -4,7 +4,7 @@
 * https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code
 * ToDo[src]: https://github.com/tsega/drupal-8-twig-snippets-vs-code
 
-## Форматирование
+## Форматирование `Alt+Shift+F`
 * Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
 * Форматировать выделенный фрагмент `Ctrl`+`F`
 * Prettier: `CMD`/`Shift`/`P` -> Format Document [Shift+ALT+F]
@@ -31,14 +31,13 @@
 
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
-  - `"php.suggest.basic": false`, `Alt+Shift+F`
 * [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) [900k] `ikappas.phpcs`
-* [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
-* [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
 * [Drupal Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
-* [PHP Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
-* [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
+* [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
 * [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
+* [PHP Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
+* [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
+* [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
 
 ## Remote
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
