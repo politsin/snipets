@@ -36,9 +36,11 @@
 * Beautify css/sass/scss/less [789k]
   - https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
 ## PHP
+* PHP [Intelephense [3.5M]](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+  - `"php.suggest.basic": false`
 * phpcs
   - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
-* PHP Intelephense
+* [PHP Intelephense]
   - https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
 * Twig [334k]
   - https://marketplace.visualstudio.com/items?itemName=whatwedo.twig
@@ -77,10 +79,7 @@
   - https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker
 * PHP Getters & Setters [153k]
   https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters
-* PHP Intelephense [3.5M]
-  https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
-* PHP IntelliSense [4.8M]
-  - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense
+
 * PHP Namespace Resolver [317k]
   - https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver
 * phpcs [900k]
