@@ -22,22 +22,15 @@
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
 
 ## Local
-* Auto Close Tag `vscode:extension/formulahendry.auto-close-tag`
-  - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
-* Auto Rename Tag `vscode:extension/formulahendry.auto-rename-tag`
-  - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
-* EditorConfig for VS Code
-  - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-* Remote - SSH
-  - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
-  - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit
-* Terminal
-  - https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal
-* Beautify css/sass/scss/less [789k]
-  - https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
+* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
+* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) `vscode:extension/formulahendry.auto-rename-tag`
+* [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) `ms-vscode-remote.remote-ssh`
+* [?] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
+* [?] [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) `formulahendry.terminal`
+
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
-  - `"php.suggest.basic": false`
+  - `"php.suggest.basic": false`, `Alt+Shift+F`
 * phpcs
   - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
 * [PHP Intelephense]
