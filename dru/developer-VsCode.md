@@ -48,3 +48,46 @@
   - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * rc-beautify
   - https://marketplace.visualstudio.com/items?itemName=Atom.rc-beautify
+
+## Remote
+* CSS Peek [1.3M]
+  - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+* Drupal Syntax Highlighting [57k]
+  - https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal
+* EditorConfig for VS Code [2.9M]
+  - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+* ESLint [11M]
+  - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+* GitLens — Git supercharged [7.1M]
+  - https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+* Import Cost [840k]
+  - https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
+* PHP Debug [3.8M] (XDebug)
+  - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
+* PHP DocBlocker [447k]
+  - https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker
+* PHP Getters & Setters [153k]
+  https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters
+* PHP Intelephense [3.5M]
+  https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
+* PHP IntelliSense [4.8M]
+  - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
+  - 
+* 2
