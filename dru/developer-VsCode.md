@@ -29,7 +29,7 @@
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) `vscode:extension/formulahendry.auto-rename-tag`
 * [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) `ms-vscode-remote.remote-ssh`
-* [?] [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) `formulahendry.terminal`
+* [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) `formulahendry.terminal`
 
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
