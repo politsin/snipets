@@ -14,7 +14,7 @@
 
 ## Deco / Util
 * Atom Theme [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) `zhuangtongfa.Material-theme`
-* [vscode-icons] (https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `vscode-icons-team.vscode-icons`
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `vscode-icons-team.vscode-icons`
 * [select highlight in minimap](https://marketplace.visualstudio.com/items?itemName=mde.select-highlight-minimap) `mde.select-highlight-minimap`
 * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag) `vincaslt.highlight-matching-tag`
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
