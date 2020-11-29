@@ -55,6 +55,11 @@
 * [?] [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) [1.3M]
 * [?] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) [4.4M]
 
+## Exec
+```sh
+ code --install-extension MS-CEINTL.vscode-language-pack-ru
+```
+
 ## Local
 ```json
 {
