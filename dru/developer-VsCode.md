@@ -31,14 +31,10 @@
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
   - `"php.suggest.basic": false`, `Alt+Shift+F`
-* phpcs
-  - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
-* [PHP Intelephense]
-  - https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
-* Twig [334k]
-  - https://marketplace.visualstudio.com/items?itemName=whatwedo.twig
-* Twig Language 2 [152k]
-  - https://marketplace.visualstudio.com/items?itemName=mblode.twig-language-2
+* [phpcs] (https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) `ikappas.phpcs`
+* [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
+* [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
+  - 
 ## JS
 * ES7 React/Redux/GraphQL/React-Native snippets
   - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
@@ -68,8 +64,7 @@
   - https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
 * PHP Debug [3.8M] (XDebug)
   - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
-* PHP DocBlocker [447k]
-  - https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker
+
 * PHP Getters & Setters [153k]
   https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters
 
