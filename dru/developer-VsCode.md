@@ -21,12 +21,12 @@
 * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag) `vincaslt.highlight-matching-tag`
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) [7.1M]
+* [?] [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) [124k]
 
 ## Local
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) `vscode:extension/formulahendry.auto-rename-tag`
 * [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) `ms-vscode-remote.remote-ssh`
-* [?] 
 * [?] [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) `formulahendry.terminal`
 
 ## PHP
