@@ -53,3 +53,72 @@
 * [?] [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) [2M]
 * [?] [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) [1.3M]
 * [?] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) [4.4M]
+
+Local
+```json
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "atomKeymap.promptV3Features": true,
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.side": "left",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "problems.autoReveal": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autorefresh": false,
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "update.showReleaseNotes": false,
+    "files.associations": {
+        "*.module": "php",
+        "*.theme": "php",
+        "*.inc": "php"
+    },
+    "files.insertFinalNewline": true,
+    "php.validate.run": "onType",
+    "php.validate.executablePath": "C:\\php\\php.exe",
+    "php.executablePath": "C:\\php\\php.exe",
+    "phpcs.standard": "Drupal",
+    "phpcs.executablePath": "C:\\php\\php.exe",
+    "phpcs.showSources": true,
+    "php.suggest.basic": false,
+    "intelephense.environment.documentRoot": "/var/www/html",
+    "namespaceResolver.highlightOnSave": true,
+    "remote.SSH.remotePlatform": {
+        "138.201.195.25": "linux"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.explorerKind": "external",
+    "terminal.external.windowsExec": "C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.enableAppInsights": false,
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+}
+```
