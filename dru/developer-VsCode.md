@@ -34,7 +34,9 @@
 * [phpcs] (https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) `ikappas.phpcs`
 * [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
 * [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
-  - 
+* [Drupal Syntax Highlighting] (https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
+* [PHP Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
+  
 ## JS
 * ES7 React/Redux/GraphQL/React-Native snippets
   - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
@@ -52,8 +54,6 @@
 ## Remote
 * CSS Peek [1.3M]
   - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
-* Drupal Syntax Highlighting [57k]
-  - https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal
 * EditorConfig for VS Code [2.9M]
   - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 * ESLint [11M]
@@ -62,8 +62,7 @@
   - https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 * Import Cost [840k]
   - https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
-* PHP Debug [3.8M] (XDebug)
-  - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
+
 
 * PHP Getters & Setters [153k]
   https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters
