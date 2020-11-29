@@ -12,26 +12,20 @@
   - CSS / SCSS / Less
   - HTML / YAML / Markdown / GraphQL
 
-## Deco
-* Atom Theme [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+## Deco / Util
+* Atom Theme [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) `zhuangtongfa.Material-theme`
+* [vscode-icons] (https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `vscode-icons-team.vscode-icons`
+* [select highlight in minimap](https://marketplace.visualstudio.com/items?itemName=mde.select-highlight-minimap) `mde.select-highlight-minimap`
+* [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag) `vincaslt.highlight-matching-tag`
+* [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
+* Atom [Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings) `vscode:extension/ms-vscode.atom-keybindings`
+* [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
 
 ## Local
-* Atom Keymap `vscode:extension/ms-vscode.atom-keybindings`
-  - https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
 * Auto Close Tag `vscode:extension/formulahendry.auto-close-tag`
   - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
 * Auto Rename Tag `vscode:extension/formulahendry.auto-rename-tag`
   - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
-* Bracket Pair Colorizer 2 `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
-  - https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
-* Russian Language Pack for Visual Studio Code
-  - https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru
-* vscode-icons
-  - https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
-* select highlight in minimap
-  - https://marketplace.visualstudio.com/items?itemName=mde.select-highlight-minimap
-* Highlight Matching Tag
-  - https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag
 * EditorConfig for VS Code
   - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 * Remote - SSH
