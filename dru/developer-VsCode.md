@@ -1,4 +1,8 @@
 # Visual Studio Code for Drupal
+
+## Refs:
+* https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code
+
 ## Форматирование
 * Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
 * Форматировать выделенный фрагмент `Ctrl`+`F`
