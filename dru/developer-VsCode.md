@@ -1,6 +1,7 @@
 # Visual Studio Code for Drupal
-
-* Prettier: `CMD`/`Shift`/`P` -> Format Document
+## Форматирование
+* Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
+* Prettier: `CMD`/`Shift`/`P` -> Format Document [Shift+ALT+F]
   - JavaScript / TypeScript / JSX / JSON / Vue /Angular
   - CSS / SCSS / Less
   - HTML / YAML / Markdown / GraphQL
