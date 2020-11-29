@@ -44,27 +44,11 @@
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
 
 ## JS
-* ES7 React/Redux/GraphQL/React-Native snippets
-  - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
-* ESLint
-  - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-* Import Cost
-  - https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
-* JavaScript (ES6) code snippets
-  - https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
-* Prettier - Code formatter
-  - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) [9.4M]
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) [11M]
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) [2.4M]
 * [Class Helper](https://marketplace.visualstudio.com/items?itemName=predrag-nikolic.php-class-helper) [24k]
 * [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) [840k]
-
-## Remote
-* CSS Peek [1.3M]
-  - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
-* ESLint [11M]
-  - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-* Prettier - Code formatter [9.4M]
-  - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-* TSLint [2.4M]
-  - https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin
-
-
+* [?] [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) [2M]
+* [?] [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) [1.3M]
+* [?] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) [4.4M]
