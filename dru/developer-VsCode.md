@@ -72,22 +72,16 @@
   https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
 * PHP IntelliSense [4.8M]
   - https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
-  - 
-* 2
+* PHP Namespace Resolver [317k]
+  - https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver
+* phpcs [900k]
+  - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
+* Prettier - Code formatter [9.4M]
+  - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+* Russian Language Pack for Visual Studio Code [590k]
+  - https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru
+* TSLint [2.4M]
+  - https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin
+* YAML [4.7M]
+  - https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
