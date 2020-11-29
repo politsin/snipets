@@ -53,8 +53,8 @@
   - https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
 * Prettier - Code formatter
   - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-* rc-beautify
-  - https://marketplace.visualstudio.com/items?itemName=Atom.rc-beautify
+* Class Helper
+  - https://marketplace.visualstudio.com/items?itemName=predrag-nikolic.php-class-helper
 
 ## Remote
 * CSS Peek [1.3M]
