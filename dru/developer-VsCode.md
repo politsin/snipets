@@ -1,6 +1,9 @@
 # Visual Studio Code for Drupal
 
-* `CMD`/`Shift`/`P` -> Format Document
+* Prettier: `CMD`/`Shift`/`P` -> Format Document
+  - JavaScript / TypeScript / JSX / JSON / Vue /Angular
+  - CSS / SCSS / Less
+  - HTML / YAML / Markdown / GraphQL
 
 ## Local
 * Atom Keymap `vscode:extension/ms-vscode.atom-keybindings`
