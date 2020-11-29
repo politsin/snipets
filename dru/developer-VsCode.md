@@ -13,7 +13,7 @@
   - HTML / YAML / Markdown / GraphQL
 
 ## Deco
-* Atom Theme (One Dark Pro) https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme
+* Atom Theme [One Dark Pro)] (https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 
 ## Local
 * Atom Keymap `vscode:extension/ms-vscode.atom-keybindings`
