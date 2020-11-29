@@ -119,6 +119,12 @@ Local
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
 ```
