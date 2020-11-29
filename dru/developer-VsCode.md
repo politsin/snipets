@@ -20,12 +20,13 @@
 * [select highlight in minimap](https://marketplace.visualstudio.com/items?itemName=mde.select-highlight-minimap) `mde.select-highlight-minimap`
 * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag) `vincaslt.highlight-matching-tag`
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
+* [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) [7.1M]
 
 ## Local
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) `vscode:extension/formulahendry.auto-rename-tag`
 * [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) `ms-vscode-remote.remote-ssh`
-* [?] [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
+* [?] 
 * [?] [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal) `formulahendry.terminal`
 
 ## PHP
@@ -38,6 +39,9 @@
 * [PHP Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
 * [?] [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
 * [?] [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
+
+## Remote
+* [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
 
 ## JS
 * ES7 React/Redux/GraphQL/React-Native snippets
@@ -56,12 +60,8 @@
 ## Remote
 * CSS Peek [1.3M]
   - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
-* EditorConfig for VS Code [2.9M]
-  - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 * ESLint [11M]
   - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-* GitLens — Git supercharged [7.1M]
-  - https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 * Prettier - Code formatter [9.4M]
   - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * TSLint [2.4M]
