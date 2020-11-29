@@ -13,13 +13,13 @@
   - HTML / YAML / Markdown / GraphQL
 
 ## Deco / Util
+* [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
+* Atom [Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings) `vscode:extension/ms-vscode.atom-keybindings`
 * Atom Theme [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) `zhuangtongfa.Material-theme`
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `vscode-icons-team.vscode-icons`
 * [select highlight in minimap](https://marketplace.visualstudio.com/items?itemName=mde.select-highlight-minimap) `mde.select-highlight-minimap`
 * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag) `vincaslt.highlight-matching-tag`
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
-* Atom [Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings) `vscode:extension/ms-vscode.atom-keybindings`
-* [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
 
 ## Local
 * Auto Close Tag `vscode:extension/formulahendry.auto-close-tag`
