@@ -24,6 +24,7 @@
 * [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) `vscode:extension/CoenraadS.bracket-pair-colorizer-2`
 * [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) [7.1M]
 * [?] [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) [124k]
+* https://marketplace.visualstudio.com/items?itemName=liamhammett.inline-parameters
 
 ## Local
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) `vscode:extension/formulahendry.auto-close-tag`
