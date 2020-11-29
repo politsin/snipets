@@ -4,15 +4,15 @@
 * https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code
 * ToDo[src]: https://github.com/tsega/drupal-8-twig-snippets-vs-code
 
-## Форматирование `Alt+Shift+F`
-* Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
+## Всякое
+* Форматирование `Alt`+`Shift`+`F`
 * Форматировать выделенный фрагмент `Ctrl`+`F`
-* Prettier: `CMD`/`Shift`/`P` -> Format Document [Shift+ALT+F]
-  - JavaScript / TypeScript / JSX / JSON / Vue /Angular
+* Prettier: `Ctrl`+`Shift`+`P` -> Format Document [`Alt+Shift+F`]
+  - JavaScript / TypeScript / JSX / JSON / Vue / Angular
   - CSS / SCSS / Less
   - HTML / YAML / Markdown / GraphQL
-## PHP Intelephense:
-* Ctrl+Shift+P: `@` внутри файла, `#` по рабочей области
+* PHP Intelephense:
+  - `Ctrl`+`Shift`+`P`: `@` внутри файла, `#` по рабочей области
 
 ## Deco / Util
 * [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru) [590k]
