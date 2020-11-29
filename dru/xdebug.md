@@ -1,6 +1,7 @@
 # Xdebug
 
 ## Refs
+* VS Code plugin / https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug
 * https://www.drupal.org/docs/develop/development-tools/xdebug-debugger
 
 ## Install
