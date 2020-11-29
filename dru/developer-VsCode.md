@@ -54,7 +54,7 @@
 * [?] [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) [1.3M]
 * [?] [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) [4.4M]
 
-Local
+## Local
 ```json
 {
   "workbench.colorTheme": "One Dark Pro",
@@ -132,5 +132,43 @@ Local
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
+}
+```
+## Remote
+```js
+{
+  /* PHP */
+  "phpcs.enable": true,
+  // "phpcs.standard": "Drupal,DrupalPractice",
+  "phpcs.standard": "Drupal",
+  "phpcs.executablePath": "/usr/bin/phpcs",
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "namespaceResolver.highlightOnOpen": true,
+  "intelephense.environment.documentRoot": "/var/www/html",
+  "intelephense.telemetry.enabled": false,
+  "intelephense.format.enable": true,
+  "intelephense.trace.server": "messages",
+  /* Editor */
+  "editor.autoIndent": "full",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.module": "php",
+    "*.theme": "php"
+  },
+  "workbench.list.smoothScrolling": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "intelephense.format.braces": "k&r",
+  "twig-language-2.indentStyle": "space",
+  "composer.executablePath": "/usr/bin/composer"
 }
 ```
