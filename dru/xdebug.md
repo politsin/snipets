@@ -23,7 +23,8 @@ xdebug.extended_info = 1
 xdebug.idekey = "PHPSTORM"
 #xdebug.profiler_enable=1
 #xdebug.profiler_output_dir=/tmp
-
+#xdebug.mode = off
+#xdebug.default_enable = off
 ```
 
 `.vscode/launch.json`
