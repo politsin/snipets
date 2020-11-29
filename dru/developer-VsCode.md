@@ -36,7 +36,7 @@
 * Beautify css/sass/scss/less [789k]
   - https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
 ## PHP
-* PHP [Intelephense [3.5M]](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+* PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
   - `"php.suggest.basic": false`
 * phpcs
   - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
