@@ -13,7 +13,7 @@
   - HTML / YAML / Markdown / GraphQL
 
 ## Deco / Util
-* [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
+* [Russian Language](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru) [590k]
 * Atom [Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings) `vscode:extension/ms-vscode.atom-keybindings`
 * Atom Theme [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) `zhuangtongfa.Material-theme`
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) `vscode-icons-team.vscode-icons`
@@ -31,12 +31,14 @@
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
   - `"php.suggest.basic": false`, `Alt+Shift+F`
-* [phpcs] (https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) `ikappas.phpcs`
+* [phpcs] (https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) [900k] `ikappas.phpcs`
 * [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
 * [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
 * [Drupal Syntax Highlighting] (https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
 * [PHP Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
-  
+* [?] [YAML] (https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
+* [?] [PHP Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
+
 ## JS
 * ES7 React/Redux/GraphQL/React-Native snippets
   - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
@@ -48,8 +50,8 @@
   - https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
 * Prettier - Code formatter
   - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-* Class Helper
-  - https://marketplace.visualstudio.com/items?itemName=predrag-nikolic.php-class-helper
+* [Class Helper](https://marketplace.visualstudio.com/items?itemName=predrag-nikolic.php-class-helper) [24k]
+* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) [840k]
 
 ## Remote
 * CSS Peek [1.3M]
@@ -60,23 +62,9 @@
   - https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 * GitLens — Git supercharged [7.1M]
   - https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
-* Import Cost [840k]
-  - https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
-
-
-* PHP Getters & Setters [153k]
-  https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters
-
-* PHP Namespace Resolver [317k]
-  - https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver
-* phpcs [900k]
-  - https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs
 * Prettier - Code formatter [9.4M]
   - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-* Russian Language Pack for Visual Studio Code [590k]
-  - https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru
 * TSLint [2.4M]
   - https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin
-* YAML [4.7M]
-  - https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
 
