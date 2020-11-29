@@ -2,6 +2,7 @@
 
 ## Refs:
 * https://www.drupal.org/docs/develop/development-tools/configuring-visual-studio-code
+* ToDo[src]: https://github.com/tsega/drupal-8-twig-snippets-vs-code
 
 ## Форматирование
 * Сохранить без форматирования: `Ctrl`+`K` / `Ctrl`+`Shift`+`S`
