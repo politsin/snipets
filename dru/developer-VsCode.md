@@ -67,6 +67,9 @@
 ```json
 {
   "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "vsicons.dontShowNewVersionMessage": true,
   "atomKeymap.promptV3Features": true,
   "editor.tabSize": 2,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -79,28 +82,30 @@
   "editor.formatOnSave": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "problems.autoReveal": false,
+  "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autorefresh": false,
   "gitlens.advanced.messages": {
-    "suppressLineUncommittedWarning": true
+     "suppressLineUncommittedWarning": true
   },
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
   "update.showReleaseNotes": false,
-  "files.associations": {
-    "*.module": "php",
-    "*.theme": "php",
-    "*.inc": "php"
-  },
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+      "*.module": "php",
+      "*.theme": "php",
+      "*.inc": "php"
+  },
+  "php.suggest.basic": false,
   "php.validate.run": "onType",
   "php.validate.executablePath": "C:\\php\\php.exe",
   "php.executablePath": "C:\\php\\php.exe",
   "phpcs.standard": "Drupal",
   "phpcs.executablePath": "C:\\php\\php.exe",
   "phpcs.showSources": true,
-  "php.suggest.basic": false,
   "[php]": {
     "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
   },
