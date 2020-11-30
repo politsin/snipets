@@ -6,7 +6,7 @@
 
 ## Всякое
 * Опции `Shift`+`Ctrl`+`P` / `Shift`+`CMD`+`P`
-* Форматирование `Alt`+`Shift`+`F` / 
+* Форматирование `Alt`+`Shift`+`F` / `Ctrl`+`Option`+`B`
 * Форматировать выделенный фрагмент `Ctrl`+`F`
 * Prettier: `Ctrl`+`Shift`+`P` -> Format Document [`Alt+Shift+F`]
   - JavaScript / TypeScript / JSX / JSON / Vue / Angular
