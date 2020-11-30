@@ -5,7 +5,8 @@
 * ToDo[src]: https://github.com/tsega/drupal-8-twig-snippets-vs-code
 
 ## Всякое
-* Форматирование `Alt`+`Shift`+`F`
+* Опции `Shift`+`Ctrl`+`P` / `Shift`+`CMD`+`P`
+* Форматирование `Alt`+`Shift`+`F` / 
 * Форматировать выделенный фрагмент `Ctrl`+`F`
 * Prettier: `Ctrl`+`Shift`+`P` -> Format Document [`Alt+Shift+F`]
   - JavaScript / TypeScript / JSX / JSON / Vue / Angular
