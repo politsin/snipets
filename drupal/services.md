@@ -30,7 +30,7 @@ $request = \Drupal::request();
 $request->getUri(); // "https://example.com/app/debug"
 $request->getRequestUri(); // "/app/debug"
 
-$storage = \Drupal::entityManager()->getStorage('city');
+$storage = \Drupal::entityTypeManager()->getStorage('city');
 $terms_storage = \Drupal::service('entity_type.manager')->getStorage("taxonomy_term");
 
 use \Drupal\user\Entity\User;
