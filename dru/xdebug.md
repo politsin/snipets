@@ -16,18 +16,11 @@
 ```ini
 [xdebug]
 zend_extension=xdebug.so
+xdebug.mode=off
+#xdebug.mode = debug
+xdebug.client_host=127.0.0.1
 xdebug.remote_enable=true
-xdebug.remote_host=127.0.0.1
-xdebug.remote_port=9000
-xdebug.remote_handler=dbgp
-xdebug.extended_info = 1
 xdebug.idekey = "PHPSTORM"
-#xdebug.profiler_enable=1
-#xdebug.profiler_output_dir=/tmp
-#xdebug.mode = off
-#xdebug.default_enable = off
-#xdebug.mode = off
-#xdebug.start_with_request = trigger
 ```
 
 `.vscode/launch.json`
