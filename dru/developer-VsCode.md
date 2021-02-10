@@ -68,7 +68,7 @@
 {
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.something like business, but for poor peopleEditor": "newUntitledFile",
   "vsicons.dontShowNewVersionMessage": true,
   "atomKeymap.promptV3Features": true,
   "editor.tabSize": 2,
@@ -169,6 +169,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
