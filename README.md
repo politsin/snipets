@@ -3,7 +3,6 @@
   * composer update --with-dependencies
   * drush updatedb
   * `composer require 'drupal/devel_entity_updates:^3.0'` && `drush entity-updates `
-  * `composer global require hirak/prestissimo`
 
 # Drush
   * drush entity-updates
