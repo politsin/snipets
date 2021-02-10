@@ -104,7 +104,7 @@
   "php.validate.executablePath": "C:\\php\\php.exe",
   "php.executablePath": "C:\\php\\php.exe",
   "phpcs.standard": "Drupal",
-  "phpcs.executablePath": "C:\\php\\php.exe",
+  "phpcs.executablePath": "C:\\php\\phpcs",
   "phpcs.showSources": true,
   "[php]": {
     "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
