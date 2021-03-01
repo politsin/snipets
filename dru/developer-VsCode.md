@@ -38,13 +38,12 @@
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
 * PHP [cs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) [900k] `ikappas.phpcs`
 * PHP [cbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf) [900k] `persoderlind.vscode-phpcbf`
-* PHP [DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
-* PHP [Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
+* [?] PHP [DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) [447k]
+* [?] PHP [Namespace Resolver](https://marketplace.visualstudio.com/items?itemName=MehediDracula.php-namespace-resolver) [317k]
 * Drupal [Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
 * Twig [Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) `EditorConfig.EditorConfig`
-* [PHP/JS](https://marketplace.visualstudio.com/items?itemName=liamhammett.inline-parameters) [5k]
 * [ ] PHP [Debug  (XDebug)](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) [3.8M]
 
 ## JS / Frontend
