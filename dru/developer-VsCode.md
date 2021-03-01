@@ -36,8 +36,8 @@
 
 ## PHP
 * PHP [Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client) [3.5M] `bmewburn.vscode-intelephense-client`
-* PHP [cs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) [900k] `ikappas.phpcs`
-* PHP [cbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf) [900k] `persoderlind.vscode-phpcbf`
+* PHP [cs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) [974k] `ikappas.phpcs`
+* PHP [cbf](https://marketplace.visualstudio.com/items?itemName=persoderlind.vscode-phpcbf) [29k] `persoderlind.vscode-phpcbf`
 * Drupal [Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-drupal) [57k]
 * Twig [Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language) [68k] `Twig Language`
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) [4.7M]
