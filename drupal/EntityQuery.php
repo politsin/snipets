@@ -35,6 +35,30 @@ use Drupal\Core\Entity\EntityRepositoryInterface;
     $this->entityRepository = $entity_repository;
   }
 
+/**
+ * Query.
+ */
+private function query($entity_type = 'cml') {
+  $entities = [];
+  $storage = \Drupal::service('entity_type.manager')->getStorage($entity_type);
+  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+  $query = \Drupal::entityQuery($entity_type)
+    ->condition('status', 1)
+    ->condition('field_status', ['new'], 'IN')
+    ->condition('field_file', 'NULL', '!=')
+    ->condition('field_project.entity.field_project_tx_type', $value)
+    ->sort('created', 'ASC')
+    ->range(0, 100);
+  $ids = $query->execute();
+  if (!empty($ids)) {
+    foreach ($storage->loadMultiple($ids) as $id => $entity) {
+      $entities[$id] = $entity;
+    }
+  }
+  return $entities;
+}
+
+
 /** ******************************/
 // Storage из EntityTypeManager.
 $query = $this->cmlStorage->getQuery()
@@ -81,28 +105,6 @@ public function query() {
 }
 
 
-/**
- * Query.
- */
-public static function query($entity_type = 'cml') {
-  $entities = [];
-  $storage = \Drupal::service('entity_type.manager')->getStorage($entity_type);
-  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
-  $query = \Drupal::entityQuery($entity_type)
-    ->condition('status', 1)
-    ->condition('field_status', ['new'], 'IN')
-    ->condition('field_file', 'NULL', '!=')
-    ->condition('field_project.entity.field_project_tx_type', $value)
-    ->sort('created', 'ASC')
-    ->range(0, 100);
-  $ids = $query->execute();
-  if (!empty($ids)) {
-    foreach ($storage->loadMultiple($ids) as $id => $entity) {
-      $entities[$id] = $entity;
-    }
-  }
-  return $entities;
-}
 
 // Nodes.
 $query = \Drupal::entityQuery('node')
