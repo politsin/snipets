@@ -40,9 +40,9 @@ use Drupal\Core\Entity\EntityRepositoryInterface;
  */
 private function query($entity_type = 'cml') {
   $entities = [];
-  $storage = \Drupal::service('entity_type.manager')->getStorage($entity_type);
-  $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
-  $query = \Drupal::entityQuery($entity_type)
+  $this->storage = \Drupal::service('entity_type.manager')->getStorage($entity_type);
+  $this->storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+  $query = $this->storage->getQuery()
     ->condition('status', 1)
     ->condition('field_status', ['new'], 'IN')
     ->condition('field_file', 'NULL', '!=')
@@ -51,7 +51,7 @@ private function query($entity_type = 'cml') {
     ->range(0, 100);
   $ids = $query->execute();
   if (!empty($ids)) {
-    foreach ($storage->loadMultiple($ids) as $id => $entity) {
+    foreach ($this->storage->loadMultiple($ids) as $id => $entity) {
       $entities[$id] = $entity;
     }
   }
