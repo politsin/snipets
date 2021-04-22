@@ -3,7 +3,8 @@
     "extra": {
         "patches": {
             "bluerhinos/phpmqtt": {
-                "TLS": "https://raw.githubusercontent.com/politsin/snipets/master/patch/phpMQTT.patch"
+                "TLS": "https://raw.githubusercontent.com/politsin/snipets/master/patch/phpMQTT.patch",
+                "PHP8": "https://raw.githubusercontent.com/politsin/snipets/master/patch/mqtt-php8.patch"
             },
             "kilylabs/client-bank-exchange-php": {
                 "КодНазПлатежа": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kl21c.patch"
