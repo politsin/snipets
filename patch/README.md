@@ -1,3 +1,8 @@
+The setup
+In your favorite command line tool, you will want to add the composer-patches project:
+
+composer require cweagans/composer-patches
+
 ```json
 {
     "extra": {
