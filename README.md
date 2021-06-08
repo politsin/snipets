@@ -1,5 +1,5 @@
 # Composer
-  * `cd /var/www/html && composer update --with-all-dependencies && drush updatedb --yes`
+  * `cd /var/www/html && composer update -W --ignore-platform-reqs && drush updatedb --yes`
   * `composer require 'drupal/devel_entity_updates:^3.0'` && `drush entity-updates `
   * composer update --with-dependencies
   * drush updatedb
