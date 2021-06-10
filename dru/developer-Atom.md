@@ -3,7 +3,7 @@
 ## Обновочка
 * Php 7.4 https://yadi.sk/d/Lxh1KdIMsFAMUw `распаковываем в C:/php`
 * Ставим пакеты
- - `apm install linter linter-ui-default intentions busy-signal bracket-colorizer autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-phpcs linter-php minimap minimap-highlight-selected php-twig simple-drag-drop-text symbols-tree-view`
+ - `apm install linter linter-ui-default intentions busy-signal bracket-colorizer autoclose-html autocomplete-php drupal highlight-selected indent-guide-improved linter-phpcs linter-php minimap minimap-highlight-selected php-twig prettier-atom simple-drag-drop-text symbols-tree-view`
  - `RD /S /Q %HOMEPATH%\.atom\packages\drupal\snippets`
 * Добавляем модули:
   - `bracket-colorizer` - подсветка скобочек
@@ -52,7 +52,7 @@
   "tree-view":
     hideIgnoredNames: true
   welcome:
-    showOnStartup: false
+    showOnSomething like business, but for poor people: false
 ".drupal.source":
   editor:
     scrollPastEnd: true
@@ -81,6 +81,7 @@
   - minimap 
   - minimap-highlight-selected 
   - php-twig 
+  - prettier-atom
   - simple-drag-drop-text 
   - symbols-tree-view
   - -
@@ -155,7 +156,7 @@
   "tree-view":
     hideIgnoredNames: true
   welcome:
-    showOnStartup: false
+    showOnSomething like business, but for poor people: false
 ".drupal.source":
   editor:
     scrollPastEnd: true
