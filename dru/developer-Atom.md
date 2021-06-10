@@ -60,8 +60,7 @@
 ```
 
 ## Старое
-* Удаляем старый атом и папку `C:\Users\{%USER%}\.atom`
-* Заходим на https://atom.io, качаем последнюю версию, устанавливаем
+
 * PHP-линтер: 
   - Качаем архив https://yadi.sk/d/F_cR0Xvg3Lvu4Q и распаковываем в C:/php
   - устанавливаем пакет https://www.microsoft.com/ru-RU/download/details.aspx?id=48145
@@ -103,18 +102,6 @@
    - php-twig: [v] Scroll Past End
    - symbols-tree-view: [v] Auto Toggle,  AutoHideTypes: variable
    - Line-ending-selector: LF
-
-## Как поправить косяк с drupal-cs
-Ишь: https://github.com/haringsrob/linter-drupalcs/issues/6
-* Быстрое решение: `apm install linter@2.2.0`
-* Быстрое решение: `apm install linter-ui-default@1.7.1`
-
-Если что-то пошло не так:
-* Запускаем `PowerShell`
-* `cd "C:\Users\$env:username\AppData\Local\atom\bin"`
-* или `cd "C:\Users\Zaraza\AppData\Local\atom\app-1.35.1\resources\cli"
-* `.\apm.cmd install linter@2.2.0`
-
 
 ## Быстрые клавиши
 * `Сtrl+↑` `Сtrl+↓` - двигать строчку
