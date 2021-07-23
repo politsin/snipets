@@ -6,13 +6,13 @@ solve([
     a/(r2-b)-c==ec2,
     a/(r3-b)-c==ec3,
 ], a, b, c)
-
+```
 a == -((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1^2*r2 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1*r2^2 + ((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r2)*r3^2 - ((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1^2 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r2^2)*r3)/((ec2^2 - 2*ec2*ec3 + ec3^2)*r1^2 - 2*(ec1*ec2 - (ec1 + ec2)*ec3 + ec3^2)*r1*r2 + (ec1^2 - 2*ec1*ec3 + ec3^2)*r2^2 + (ec1^2 - 2*ec1*ec2 + ec2^2)*r3^2 + 2*((ec1*ec2 - ec2^2 - (ec1 - ec2)*ec3)*r1 - (ec1^2 - ec1*ec2 - (ec1 - ec2)*ec3)*r2)*r3)
 
 b == -((ec1 - ec2)*r1*r2 - ((ec1 - ec3)*r1 - (ec2 - ec3)*r2)*r3)/((ec2 - ec3)*r1 - (ec1 - ec3)*r2 + (ec1 - ec2)*r3)
 
 c == -((ec1 - ec2)*ec3*r3 + (ec1*ec2 - ec1*ec3)*r1 - (ec1*ec2 - ec2*ec3)*r2)/((ec2 - ec3)*r1 - (ec1 - ec3)*r2 + (ec1 - ec2)*r3)
-```
+
 # Путь:
 ```python
 a, b, c = var('a, b, c')
