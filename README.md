@@ -17,6 +17,13 @@
 // Watchdog
 \Drupal::logger(__CLASS__)->notice($message);
 \Drupal::logger(__CLASS__)->error($message);
+
+// Storage.
+/** @var \Drupal\taxonomy\TaxonomyStorageInterface $storage */
+$storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+
+// Date Formater.
+\Drupal::service('date.formatter')->format($timestamp, $type, $format, $timezone, $langcode);
 ```
 
 # Git
