@@ -58,8 +58,8 @@ grep -Hr pure-ftpd /etc/
 grep ': ru' -P -R -I -l | xargs sed -i 's/: ru/: en/g'
 grep 'project' -P -R -I -l | xargs sed -i 's/project/work/g'
 grep 'Project' -P -R -I -l | xargs sed -i 's/Project/Work/g'
-`find . -type f -mtime -4`  - позволит найти последние изменённые файлы за последние 4 дня в текущей папке.
-
+`find . -type f -mtime -4`  - позволит найти последни`\е изменённые файлы за последние 4 дня в текущей папке.
+`find ./ -type f -name "*.*" -exec chmod -x {} \;` всем chmod
 ```
 
 # snipets
