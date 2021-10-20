@@ -40,6 +40,18 @@ entity.m
 entity_m
 format_date
 db_query
+
+    $query = \Drupal::database()->select('node__field_of_activity', 'nfoa');
+    $query->fields('nfoa', [
+      'entity_id',
+      'field_of_activity_target_id',
+    ]);
+    $query->condition('bundle', 'partner');
+    if (!empty($nids)) {
+      $query->condition('entity_id', $nids, 'IN');
+    }
+    $res = $query->execute()->fetchAll();
+
 ```
 
 # Git
