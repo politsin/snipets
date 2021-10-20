@@ -25,7 +25,7 @@ $storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
 /** @var \Drupal\taxonomy\TaxonomyInterface $term */
 $term = $storage->load($tid);
 /** @var \Drupal\node\NodeStorageInterface $storage */
-$storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+$storage = \Drupal::entityTypeManager()->getStorage('node');
 /** @var \Drupal\node\NodeInterface $node */
 $node = $storage->load($nid);
 
