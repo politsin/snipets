@@ -32,6 +32,11 @@ $node = $storage->load($nid);
 // Date Formater.
 \Drupal::service('date.formatter')->format($timestamp, $type, $format, $timezone, $langcode);
 
+\Drupal::logger('example')->notice('@hello: deleted %world.',[
+  '@hello' => $this->entity->bundle(),
+  '%world' => $this->entity->label(),
+]);
+
 grep:
 REQUEST_TIME
 drupal_mes
