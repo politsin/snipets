@@ -22,7 +22,7 @@
 // Storage.
 /** @var \Drupal\taxonomy\TaxonomyStorageInterface $storage */
 $storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
-/** @var \Drupal\taxonomy\TaxonomyInterface $term */
+/** @var \Drupal\taxonomy\TermInterface $term */
 $term = $storage->load($tid);
 /** @var \Drupal\node\NodeStorageInterface $storage */
 $storage = \Drupal::entityTypeManager()->getStorage('node');
