@@ -6,6 +6,13 @@ solve([
     a/(r2-b)-c==ec2,
     a/(r3-b)-c==ec3,
 ], a, b, c)
+
+a, b, c, ec1, ec2, ec3, r1, r2, r3 = var('a, b, c, ec1, ec2, ec3, r1, r2, r3')
+solve([
+    a/(r1-b)-c==ec1, 
+    a/(r2-b)-c==ec2,
+    a/(r3-b)-c==ec3,
+], a, b, c)
 ```
 a == -((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1^2*r2 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1*r2^2 + ((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r2)*r3^2 - ((ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r1^2 - (ec1^2*ec2 - ec1*ec2^2 + (ec1 - ec2)*ec3^2 - (ec1^2 - ec2^2)*ec3)*r2^2)*r3)/((ec2^2 - 2*ec2*ec3 + ec3^2)*r1^2 - 2*(ec1*ec2 - (ec1 + ec2)*ec3 + ec3^2)*r1*r2 + (ec1^2 - 2*ec1*ec3 + ec3^2)*r2^2 + (ec1^2 - 2*ec1*ec2 + ec2^2)*r3^2 + 2*((ec1*ec2 - ec2^2 - (ec1 - ec2)*ec3)*r1 - (ec1^2 - ec1*ec2 - (ec1 - ec2)*ec3)*r2)*r3)
 
