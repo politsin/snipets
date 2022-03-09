@@ -7,7 +7,7 @@ echo "" > nginx-access.log
 systemctl status fail2ban.service
 fail2ban-client status nginx-limit-req
 
-iptables -L -n
+# iptables -t filter -L
 ```
 
 ```
