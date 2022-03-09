@@ -8,6 +8,7 @@ systemctl status fail2ban.service
 fail2ban-client status nginx-limit-req
 
 # iptables -t filter -L
+iptables -L -v -n | less
 ```
 
 ```
