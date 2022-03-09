@@ -19,11 +19,12 @@ failregex = <HOST>.*
 [nginx-limit-req]
 enabled = true
 filter = nginx-limit-req
-action = iptables-multiport[name=ReqLimit, port="http,https", protocol=tcp]
+chain = INPUT
+port = http,https
 logpath = /***/log/nginx-access.log
 findtime = 36000
 maxretry = 5
-bantime = 3600
+bantime = 360000
 ```
 
 `fail2ban-client -vvv set nginx-limit-req banip `
