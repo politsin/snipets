@@ -22,3 +22,5 @@ findtime = 36000
 maxretry = 5
 bantime = 3600
 ```
+
+`fail2ban-client -vvv set nginx-limit-req banip `
