@@ -1,6 +1,7 @@
 ```sh
 tail -n 100000000000 nginx-access.log | awk '{print $1}'| sort| uniq -c| sort -nr| head -n 40
 service fail2ban restart
+echo "" > nginx-access.log
 
 ## test 
 systemctl status fail2ban.service
