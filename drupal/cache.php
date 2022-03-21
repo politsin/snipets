@@ -6,13 +6,12 @@ namespace Drupal\city\Controller;
  * Contains \Drupal\app\Controller\AjaxResult.
  */
 
-use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Controller routines for page example routes.
  */
-class GetCity extends ControllerBase {
+class GetCity {
 
   /**
    * Get Cached.
@@ -22,7 +21,7 @@ class GetCity extends ControllerBase {
     if (!isset($data)) {
       $host = \Drupal::request()->getHost();
       $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
-      $cache_key = 'city:' . $host . ':' . $lang;
+      $cache_key = "city:$host:$lang";
       if ($cache = \Drupal::cache()->get($cache_key)) {
         $data = $cache->data;
       }
