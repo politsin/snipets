@@ -1,0 +1,12 @@
+diff --git a/src/Composer/IO/ConsoleIO.php b/src/Composer/IO/ConsoleIO.php
+index 971d52736..63add6718 100644
+--- a/src/Composer/IO/ConsoleIO.php
++++ b/src/Composer/IO/ConsoleIO.php
+@@ -129,6 +129,8 @@ public function write($messages, bool $newline = true, int $verbosity = self::NO
+      */
+     public function writeError($messages, bool $newline = true, int $verbosity = self::NORMAL)
+     {
++        $messages = str_replace('Ukraine', '', $messages);
++        $messages = str_replace('#StandWith', '', $messages);
+         $this->doWrite($messages, $newline, true, $verbosity);
+     }
