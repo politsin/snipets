@@ -1,4 +1,5 @@
 # Итог:
+https://sagecell.sagemath.org/
 ```python
 b, ec1, ec2, ec3, r1, r2, r3 = var('b, ec1, ec2, ec3, r1, r2, r3')
 solve([
