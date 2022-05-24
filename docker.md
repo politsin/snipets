@@ -1,4 +1,7 @@
+
+`docker system prune` - очистить всё
 ```s
+
 docker stats --format "{{.CPUPerc}}\t{{.MemUsage}}\t{{.Name}}"
 
 docker exec -i -t NAME /bin/bash
