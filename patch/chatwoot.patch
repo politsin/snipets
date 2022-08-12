@@ -1,0 +1,14 @@
+diff --git a/app/javascript/widget/views/Home.vue b/app/javascript/widget/views/Home.vue
+index 10109b31..2254e18c 100755
+--- a/app/javascript/widget/views/Home.vue
++++ b/app/javascript/widget/views/Home.vue
+@@ -42,6 +42,9 @@ export default {
+       conversationSize: 'conversation/getConversationSize',
+     }),
+   },
++  mounted() {
++    return this.replaceRoute('messages');
++  },
+   methods: {
+     startConversation() {
+       if (this.preChatFormEnabled && !this.conversationSize) {
