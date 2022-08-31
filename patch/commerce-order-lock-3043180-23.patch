@@ -1,0 +1,164 @@
+diff --git a/modules/order/src/OrderStorage.php b/modules/order/src/OrderStorage.php
+index c0507a8b..0b17d3d4 100644
+--- a/modules/order/src/OrderStorage.php
++++ b/modules/order/src/OrderStorage.php
+@@ -7,6 +7,7 @@ use Drupal\commerce_order\Entity\OrderInterface;
+ use Drupal\commerce_order\Event\OrderEvent;
+ use Drupal\commerce_order\Event\OrderEvents;
+ use Drupal\Core\Entity\EntityInterface;
++use Drupal\Core\Entity\EntityStorageException;
+ use Drupal\Core\Entity\EntityTypeInterface;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+@@ -29,12 +30,27 @@ class OrderStorage extends CommerceContentEntityStorage {
+    */
+   protected $skipRefresh = FALSE;
+ 
++  /**
++   * List of successfully locked orders.
++   *
++   * @var int[]
++   */
++  protected $updateLocks = [];
++
++  /***
++   * The lock backend.
++   *
++   * @var \Drupal\Core\Lock\LockBackendInterface
++   */
++  protected $lockBackend;
++
+   /**
+    * {@inheritdoc}
+    */
+   public static function createInstance(ContainerInterface $container, EntityTypeInterface $entity_type) {
+     $instance = parent::createInstance($container, $entity_type);
+     $instance->orderRefresh = $container->get('commerce_order.order_refresh');
++    $instance->lockBackend = $container->get('lock');
+     return $instance;
+   }
+ 
+@@ -76,6 +92,13 @@ class OrderStorage extends CommerceContentEntityStorage {
+    *   The order.
+    */
+   protected function doOrderPreSave(OrderInterface $order) {
++    if (!$order->isNew() && !isset($this->updateLocks[$order->id()]) && !$this->lockBackend->lockMayBeAvailable($this->getLockId($order->id()))) {
++      // This is updating an order that someone else has locked.
++      // @todo what to do here? Could acquire the lock and wait for it to be
++      //  but that will still result in overwriting data. Throw an exception?
++      //  Respect the optimistic locking setting?
++    }
++
+     // Ensure the order doesn't reference any removed order item by resetting
+     // the "order_items" field with order items that were successfully loaded
+     // from the database.
+@@ -122,4 +145,68 @@ class OrderStorage extends CommerceContentEntityStorage {
+     return parent::postLoad($entities);
+   }
+ 
++  /**
++   * {@inheritdoc}
++   */
++  public function save(EntityInterface $entity) {
++    try {
++      return parent::save($entity);
++    }
++    finally {
++      // Release the update lock if it was acquired for this entity.
++      if (isset($this->updateLocks[$entity->id()])) {
++        $this->lockBackend->release($this->getLockId($entity->id()));
++        unset($this->updateLocks[$entity->id()]);
++      }
++    }
++  }
++
++  /**
++   * Loads the unchanged entity, bypassing the static cache, and locks it.
++   *
++   * This implements explicit, pessimistic locking as opposed to the optimistic
++   * locking that will log or prevent a conflicting save. Use this method for
++   * use cases that load an order with the explicit purpose of immediately
++   * changing and saving it again. Especially if these cases may run in parallel
++   * to others, for example notification/return callbacks and termination
++   * events.
++   *
++   * @param int $order_id
++   *   The order ID.
++   *
++   * @return \Drupal\commerce_order\Entity\OrderInterface|null
++   *   The loaded order or NULL if the entity cannot be loaded.
++   *
++   * @throws \Drupal\Core\Entity\EntityStorageException
++   *   Thrown if the lock could not be acquired.
++   */
++  public function loadForUpdate(int $order_id): ?OrderInterface {
++    $lock_id = $this->getLockId($order_id);
++    if ($this->lockBackend->acquire($lock_id)) {
++      $this->updateLocks[$order_id] = TRUE;
++      return $this->loadUnchanged($order_id);
++    }
++    else {
++      // Failed to acquire initial lock, wait for it to free up.
++      if (!$this->lockBackend->wait($lock_id) && $this->lockBackend->acquire($lock_id)) {
++        $this->updateLocks[$order_id] = TRUE;
++        return $this->loadUnchanged($order_id);
++      }
++      throw new EntityStorageException('Failed to acquire lock');
++    }
++  }
++
++  /**
++   * Gets the lock ID for the given order ID.
++   *
++   * @param int $order_id
++   *   The order ID.
++   *
++   * @return string
++   *   The lock ID.
++   */
++  protected function getLockId(int $order_id): string {
++    return 'commerce_order_update:' . $order_id;
++  }
++
+ }
+diff --git a/modules/payment/src/Controller/PaymentCheckoutController.php b/modules/payment/src/Controller/PaymentCheckoutController.php
+index 84159e11..83a4ffe5 100644
+--- a/modules/payment/src/Controller/PaymentCheckoutController.php
++++ b/modules/payment/src/Controller/PaymentCheckoutController.php
+@@ -84,6 +84,18 @@ class PaymentCheckoutController implements ContainerInjectionInterface {
+     $order = $route_match->getParameter('commerce_order');
+     $step_id = $route_match->getParameter('step');
+     $this->validateStepId($step_id, $order);
++
++    // Reload the order and mark it for updating, redirecting to step below
++    // will save it and free the lock. This must be done before the checkout
++    // flow plugin is initiated to make sure that it has the reloaded order
++    // object. Additionally, the checkout flow plugin gets the order from
++    // the route match object, so update the order there as well with. The
++    // passed in route match object is created on-demand in
++    // \Drupal\Core\Controller\ArgumentResolver\RouteMatchValueResolver and is
++    // not the same object as the current route match service.
++    $order = \Drupal::entityTypeManager()->getStorage('commerce_order')->loadForUpdate($order->id());
++    \Drupal::routeMatch()->getParameters()->set('commerce_order', $order);
++
+     /** @var \Drupal\commerce_payment\Entity\PaymentGatewayInterface $payment_gateway */
+     $payment_gateway = $order->get('payment_gateway')->entity;
+     $payment_gateway_plugin = $payment_gateway->getPlugin();
+diff --git a/modules/payment/src/PaymentOrderUpdater.php b/modules/payment/src/PaymentOrderUpdater.php
+index e6ed4842..bca6b84e 100644
+--- a/modules/payment/src/PaymentOrderUpdater.php
++++ b/modules/payment/src/PaymentOrderUpdater.php
+@@ -52,10 +52,10 @@ class PaymentOrderUpdater implements PaymentOrderUpdaterInterface, DestructableI
+    */
+   public function updateOrders() {
+     if (!empty($this->updateList)) {
++      /** @var \Drupal\commerce_order\OrderStorage $order_storage */
+       $order_storage = $this->entityTypeManager->getStorage('commerce_order');
+-      /** @var \Drupal\commerce_order\Entity\OrderInterface[] $orders */
+-      $orders = $order_storage->loadMultiple($this->updateList);
+-      foreach ($orders as $order) {
++      foreach ($this->updateList as $order_id) {
++        $order = $order_storage->loadForUpdate($order_id);
+         $this->updateOrder($order, TRUE);
+       }
+     }
