@@ -1,0 +1,15 @@
+{
+    "require": {
+        "drupal/coder": "^8.0",
+        "slevomat/coding-standard": "~8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "repositories": [
+        {"type": "composer", "url": "https://packages.drupal.org/8"}
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
