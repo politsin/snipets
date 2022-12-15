@@ -117,7 +117,7 @@ Remote:
 * https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
 
-```
+```json
 {
   "atomKeymap.promptV3Features": true,
   "editor.tabSize": 2,
