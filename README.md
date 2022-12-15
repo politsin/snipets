@@ -121,6 +121,7 @@ Remote:
 ```json
 {
   "atomKeymap.promptV3Features": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.tabSize": 2,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
@@ -132,9 +133,6 @@ Remote:
   "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.semanticTokenColorCustomizations": {},
   "editor.guides.bracketPairs": true,
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "vscode-icons",
-  "diffEditor.ignoreTrimWhitespace": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.associations": {
@@ -142,6 +140,10 @@ Remote:
     "*.theme": "php",
     "*.inc": "php"
   },
+  "intelephense.environment.documentRoot": "/var/www/html",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
   "[twig]": {
     "editor.formatOnPaste": false
   },
@@ -154,10 +156,8 @@ Remote:
   "[php]": {
     "editor.defaultFormatter": "wongjn.php-sniffer"
   },
-  "intelephense.environment.documentRoot": "/var/www/html",
   "php.validate.enable": false,
-  "php.suggest.basic": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "php.suggest.basic": false
 }
 ```
 ## Remote:
