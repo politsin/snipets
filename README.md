@@ -100,3 +100,64 @@ grep 'Project' -P -R -I -l | xargs sed -i 's/Project/Work/g'
 * /var/www/html$ patch -p1 < twig_debug_output_does-2118743-93.patch.txt
 * http://www.anexusit.com/blog/how-to-apply-patches-drupal-8-composer
 
+# VsCode Remote:
+Local:
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer
+* https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru
+* https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings
+* https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+* https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons
+* https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Remote:
+* https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client
+* https://marketplace.visualstudio.com/items?itemName=wongjn.php-sniffer
+* https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+* https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
+```
+{
+  "atomKeymap.promptV3Features": true,
+  "editor.tabSize": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.side": "left",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.renderWhitespace": "none",
+  "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.semanticTokenColorCustomizations": {},
+  "editor.guides.bracketPairs": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.module": "php",
+    "*.theme": "php",
+    "*.inc": "php"
+  },
+  "[twig]": {
+    "editor.formatOnPaste": false
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer"
+  },
+  "intelephense.environment.documentRoot": "/var/www/html",
+  "php.validate.enable": false,
+  "php.suggest.basic": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false
+}
+```
+
+
