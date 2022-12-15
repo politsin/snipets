@@ -117,6 +117,7 @@ Remote:
 * https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 * https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
 
+## Пользователь:
 ```json
 {
   "atomKeymap.promptV3Features": true,
