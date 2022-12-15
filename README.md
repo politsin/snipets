@@ -160,5 +160,11 @@ Remote:
   "terminal.integrated.enableMultiLinePasteWarning": false
 }
 ```
+## Remote:
+```json
+{
+  "phpSniffer.autoDetect": true,
+  "phpSniffer.run": "onType"
+}
 
 
