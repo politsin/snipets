@@ -2,12 +2,14 @@ diff --git a/src/ClientBankExchange/Parser.php b/src/ClientBankExchange/Parser.p
 index 86a23fa..880d6b3 100644
 --- a/src/ClientBankExchange/Parser.php
 +++ b/src/ClientBankExchange/Parser.php
-@@ -117,6 +117,9 @@ class Parser implements \ArrayAccess
+@@ -117,6 +117,11 @@ class Parser implements \ArrayAccess
                      }
                  }
  
 +                $doc['Плательщик'] = $doc['Плательщик'] ?? ($doc['Плательщик1'] ?? NULL);
 +                $doc['Получатель'] = $doc['Получатель'] ?? ($doc['Получатель1'] ?? NULL);
++                $doc['ПлательщикКПП'] = $doc['ПлательщикКПП'] ?? 0;
++                $doc['ПолучательКПП'] = $doc['ПолучательКПП'] ?? 0;
 +
                  $type = isset($doc['СекцияДокумент']) ? $doc['СекцияДокумент'] : null;
                  unset($doc['СекцияДокумент']);
