@@ -1,0 +1,40 @@
+diff --git a/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/Configuration.php b/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/Configuration.php
+index 0b547cb..ba0986f 100644
+--- a/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/Configuration.php
++++ b/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/Configuration.php
+@@ -2238,9 +2238,9 @@ class Configuration implements ConfigurationInterface
+     {
+         $rootNode
+             ->children()
+-                ->arrayNode('remote-event')
++                ->arrayNode('remote_event')
+                     ->info('RemoteEvent configuration')
+-                    ->{$enableIfStandalone('symfony/remote-event', RemoteEvent::class)}()
++                    ->{$enableIfStandalone('symfony/remote_event', RemoteEvent::class)}()
+                 ->end()
+             ->end()
+         ;
+diff --git a/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/FrameworkExtension.php b/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/FrameworkExtension.php
+index a1f23a8..a1f60f9 100644
+--- a/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/FrameworkExtension.php
++++ b/symfony/src/Symfony/Bundle/FrameworkBundle/DependencyInjection/FrameworkExtension.php
+@@ -556,8 +556,8 @@ class FrameworkExtension extends Extension
+             }
+         }
+ 
+-        if ($this->readConfigEnabled('remote-event', $container, $config['remote-event'])) {
+-            $this->registerRemoteEventConfiguration($config['remote-event'], $container, $loader);
++        if ($this->readConfigEnabled('remote_event', $container, $config['remote_event'])) {
++            $this->registerRemoteEventConfiguration($config['remote_event'], $container, $loader);
+         }
+ 
+         if ($this->readConfigEnabled('html_sanitizer', $container, $config['html_sanitizer'])) {
+@@ -2854,7 +2854,7 @@ class FrameworkExtension extends Extension
+     private function registerRemoteEventConfiguration(array $config, ContainerBuilder $container, PhpFileLoader $loader)
+     {
+         if (!class_exists(RemoteEvent::class)) {
+-            throw new LogicException('RemoteEvent support cannot be enabled as the component is not installed. Try running "composer require symfony/remote-event".');
++            throw new LogicException('RemoteEvent support cannot be enabled as the component is not installed. Try running "composer require symfony/remote_event".');
+         }
+ 
+         $loader->load('remote_event.php');
