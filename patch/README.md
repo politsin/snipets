@@ -10,6 +10,9 @@ composer require cweagans/composer-patches
             "bluerhinos/phpmqtt": {
                 "TLS": "https://raw.githubusercontent.com/politsin/snipets/master/patch/phpMQTT.patch"
             },
+           "symfony/symfony": {
+                "Webhook": "https://raw.githubusercontent.com/politsin/snipets/master/patch/symfony-webhook.patch"
+            },
             "kilylabs/client-bank-exchange-php": {
                 "КодНазПлатежа": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kl21c.patch"
             },
