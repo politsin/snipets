@@ -48,6 +48,7 @@ private function query($entity_type = 'cml') {
     ->condition('field_file', 'NULL', '!=')
     ->condition('field_project.entity.field_project_tx_type', $value)
     ->sort('created', 'ASC')
+    ->accessCheck(TRUE)
     ->range(0, 100);
   $ids = $query->execute();
   if (!empty($ids)) {
@@ -63,6 +64,7 @@ private function query($entity_type = 'cml') {
 // Storage из EntityTypeManager.
 $query = $this->cmlStorage->getQuery()
       ->condition('status', 1)
+      ->accessCheck(TRUE)
       ->sort('created', $sort);
 $ids = $query->execute();
 if (!empty($ids)) {
@@ -94,6 +96,7 @@ public function query() {
   $query = $this->storage->getQuery()
     ->condition('status', 1)
     ->sort('created', 'ASC')
+    ->accessCheck(TRUE)
     ->range(0, 100);
   $ids = $query->execute();
   if (!empty($ids)) {
@@ -110,7 +113,8 @@ public function query() {
 $query = \Drupal::entityQuery('node')
   ->condition('status', 1)
   ->condition('type', 'activity')
-  ->condition('field_activity_group', $tid);
+  ->condition('field_activity_group', $tid)
+  ->accessCheck(TRUE);
 $ids = $query->execute();
 if (!empty($ids)) {
   foreach (Node::loadMultiple($ids) as $nid => $node) {
@@ -121,6 +125,7 @@ if (!empty($ids)) {
 // Tids.
 $query = \Drupal::entityQuery('taxonomy_term');
   ->condition('vid', 'project_type');
-  ->condition('field_key', $tx_type);
+  ->condition('field_key', $tx_type)
+  ->accessCheck(TRUE);
 $tids = $query->execute();
 $types = Term::loadMultiple($tids);
