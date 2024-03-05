@@ -20,7 +20,7 @@
 \Drupal::logger(__CLASS__)->error($message);
 
 // Storage.
-/** @var \Drupal\taxonomy\TaxonomyStorageInterface $storage */
+/** @var \Drupal\taxonomy\TermStorage $storage */
 $storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
 /** @var \Drupal\taxonomy\TermInterface $term */
 $term = $storage->load($tid);
